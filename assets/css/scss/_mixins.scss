@@ -1,0 +1,22 @@
+@mixin item-text-property{
+    line-height: 26px;
+    letter-spacing: 0.88px;
+    font-size:  $fs-item-contain;
+}
+@mixin section-header-text-property{
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+@mixin H5-property{
+    letter-spacing: 0.69px;
+    line-height: 30px;
+    font-size: $fs-item-header;
+}
+
+@mixin footer-nav-a-property{
+    font-size: $fs-item-contain;
+    text-decoration: none;
+    color: $c-white;
+}
