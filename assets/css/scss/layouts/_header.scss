@@ -1,6 +1,11 @@
 #header{
     box-shadow: $bs-header;
-    
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0px;
+    z-index: 100;
+    transition: $t-regular;
     .logo{
         float: left;
     }
@@ -88,33 +93,7 @@
             ul{
                 padding: 5px;
                 li{
-                    display:inline-block;
-                    a{
-                        @include footer-nav-a-property;
-                        color: $c-blue;
-                        padding: 5px 30px;
-                        border: 1px solid  $c-blue;
-                        border-radius: 6px;
-                        font-weight: 700;
-                        font-size: $fs-button;
-                        transition: $t-regular;
-                        &[data-checked]{
-                            background-color: $c-blue;
-                            color: $c-white;
-                            box-shadow: $bs-checked-button;
-                            transition: $t-regular;
-                        }
-                        &[data-checked]:hover{
-                            background-color: $c-white;
-                            color: $c-blue;
-                            transition: $t-regular;
-                        }
-                        &:hover{
-                            background-color: $c-blue;
-                            color: $c-white;
-                            transition: $t-regular;
-                        }
-                    }
+                    display:inline-block;                    
                 }
             }
         }
