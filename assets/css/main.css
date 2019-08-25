@@ -54,6 +54,117 @@
     padding: 35px 0px 40px;
     margin-top: 40px; }
 
+#header {
+  -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06); }
+  #header .logo {
+    float: left; }
+  #header .navigation-bar {
+    height: 25px;
+    padding: 25px 0px;
+    font-family: "Nunito"; }
+    #header .navigation-bar .menu {
+      float: left; }
+      #header .navigation-bar .menu ul {
+        padding: 5px;
+        margin-left: 60px; }
+        #header .navigation-bar .menu ul .main-menu {
+          display: inline-block;
+          padding: 0px 30px;
+          position: relative; }
+          #header .navigation-bar .menu ul .main-menu:hover .submenu {
+            visibility: visible;
+            opacity: 1;
+            z-index: 1;
+            -webkit-transform: translateY(0%);
+                    transform: translateY(0%);
+            -webkit-transition-delay: 0s, 0s, 0.3s;
+                    transition-delay: 0s, 0s, 0.3s; }
+          #header .navigation-bar .menu ul .main-menu a {
+            font-size: 14px;
+            text-decoration: none;
+            color: #fff;
+            color: #6F8BA4;
+            font-weight: 600; }
+            #header .navigation-bar .menu ul .main-menu a[data-submenu]::after {
+              content: "\f10f";
+              font-family: "Flaticon";
+              margin-left: 15px;
+              font-size: 8px; }
+          #header .navigation-bar .menu ul .main-menu .submenu {
+            position: absolute;
+            margin-left: 0px;
+            width: 200px;
+            -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+                    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 0px;
+            top: 20px;
+            opacity: 0;
+            overflow: hidden;
+            -webkit-transform: translateY(-2em);
+                    transform: translateY(-2em);
+            visibility: hidden;
+            z-index: -1;
+            -webkit-transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+            transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s; }
+            #header .navigation-bar .menu ul .main-menu .submenu li {
+              margin-left: 0px;
+              padding-left: 0px;
+              padding-right: 0px; }
+              #header .navigation-bar .menu ul .main-menu .submenu li a {
+                display: block;
+                background: #fff;
+                color: #3B566E;
+                padding-left: 20px;
+                height: 40px;
+                line-height: 40px;
+                -webkit-transition: all 0.3s ease 0s;
+                transition: all 0.3s ease 0s;
+                position: relative;
+                font-size: 13px;
+                border-bottom: 1px solid #f5f5f5; }
+                #header .navigation-bar .menu ul .main-menu .submenu li a:hover {
+                  background: #f5f5f5;
+                  padding-left: 25px;
+                  border-left: 4px solid #585CE9; }
+    #header .navigation-bar .registration {
+      float: right; }
+      #header .navigation-bar .registration ul {
+        padding: 5px; }
+        #header .navigation-bar .registration ul li {
+          display: inline-block; }
+          #header .navigation-bar .registration ul li a {
+            font-size: 14px;
+            text-decoration: none;
+            color: #fff;
+            color: #585CE9;
+            padding: 5px 30px;
+            border: 1px solid #585CE9;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 12px;
+            -webkit-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s; }
+            #header .navigation-bar .registration ul li a[data-checked] {
+              background-color: #585CE9;
+              color: #fff;
+              -webkit-box-shadow: 0 4px 5px 0 rgba(103, 67, 213, 0.24);
+                      box-shadow: 0 4px 5px 0 rgba(103, 67, 213, 0.24);
+              -webkit-transition: all 0.3s ease 0s;
+              transition: all 0.3s ease 0s; }
+            #header .navigation-bar .registration ul li a[data-checked]:hover {
+              background-color: #fff;
+              color: #585CE9;
+              -webkit-transition: all 0.3s ease 0s;
+              transition: all 0.3s ease 0s; }
+            #header .navigation-bar .registration ul li a:hover {
+              background-color: #585CE9;
+              color: #fff;
+              -webkit-transition: all 0.3s ease 0s;
+              transition: all 0.3s ease 0s; }
+
 @font-face {
   font-family: 'Nunito';
   src: url("../fonts/NunitoSans-Regular.WOFF");
@@ -142,10 +253,16 @@ Creation date: 24/08/2019 12:54
 .flaticon-copyright:before {
   content: "\f10e"; }
 
-.flaticon-left:before {
+.flaticon-angle-arrow-down:before {
   content: "\f10f"; }
 
-.flaticon-right:before {
+.flaticon-angle-pointing-to-left:before {
   content: "\f110"; }
+
+.flaticon-angle-arrow-pointing-to-right:before {
+  content: "\f111"; }
+
+.flaticon-play-button:before {
+  content: "\f112"; }
 
 /*# sourceMappingURL=main.css.map */
