@@ -1,0 +1,46 @@
+#cloud-services{
+   padding: $p-regular;
+   background-color:  $c-background-colored;
+   .content{
+    width: 100%;
+    margin: auto;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    box-shadow:  $bs-regular;    
+    border-radius: 5px;
+    background: #fff;
+    margin-bottom: 20px;    
+    cursor: pointer;
+    overflow: hidden;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 150px;
+        height: 100px;
+        left: -70px;
+        top: 0px;
+        background: #F7FAFD;
+        transform: rotate(60deg);
+        transition: $t-regular;
+    }
+    a{
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.88px;
+        color: $c-dark;
+        position: relative;
+        
+        i{
+            color: blue;
+            margin-left: 25px;
+            margin-right: 37px;
+            font-size:10px;
+            
+        }
+        
+    }
+   }
+   
+}

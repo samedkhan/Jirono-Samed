@@ -10,6 +10,27 @@
   #intro .align-self-center {
     -ms-flex-item-align: center !important;
         align-self: center !important; }
+  #intro .section-header .section-header-name h1 {
+    font-size: 28px;
+    color: #1E3056;
+    line-height: 46px;
+    letter-spacing: 0.93px;
+    margin-bottom: 20px; }
+    #intro .section-header .section-header-name h1 span {
+      color: #585CE9; }
+  #intro .section-header .section-header-contain p {
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #697BA2;
+    position: relative;
+    text-align: left !important;
+    margin-bottom: 40px; }
+  #intro .section-header .button {
+    padding: 12px 50px; }
   #intro .section-contain {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -94,8 +115,7 @@
   #footer .item-contain {
     line-height: 26px;
     letter-spacing: 0.88px;
-    font-size: 14px;
-    font-weight: 400; }
+    font-size: 14px; }
     #footer .item-contain ul li {
       padding: 0px 0px 10px 0px; }
       #footer .item-contain ul li a {
@@ -132,7 +152,6 @@
     line-height: 26px;
     letter-spacing: 0.88px;
     font-size: 14px;
-    font-weight: 400;
     text-align: center;
     border-top: 1px solid #fff;
     padding: 35px 0px 40px;
@@ -256,132 +275,6 @@
     color: #fff;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s; }
-
-#cloud-services {
-  padding: 100px 0px 80px 0px;
-  background-color: #F7FAFD; }
-  #cloud-services .content {
-    width: 100%;
-    margin: auto;
-    display: inline-block;
-    height: 40px;
-    line-height: 40px;
-    -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-            box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-    border-radius: 5px;
-    background: #fff;
-    margin-bottom: 20px;
-    cursor: pointer;
-    overflow: hidden; }
-    #cloud-services .content::after {
-      content: '';
-      position: absolute;
-      width: 150px;
-      height: 100px;
-      left: -70px;
-      top: 0px;
-      background: #F7FAFD;
-      -webkit-transform: rotate(60deg);
-              transform: rotate(60deg);
-      -webkit-transition: all 0.3s ease 0s;
-      transition: all 0.3s ease 0s; }
-    #cloud-services .content a {
-      text-decoration: none;
-      font-weight: 400;
-      font-size: 14px;
-      letter-spacing: 0.88px;
-      color: #3B566E;
-      position: relative; }
-      #cloud-services .content a i {
-        color: blue;
-        margin-left: 25px;
-        margin-right: 37px;
-        font-size: 10px; }
-
-#features {
-  padding-bottom: 80px; }
-  #features a {
-    text-decoration: none;
-    color: #585CE9; }
-    #features a .contain-item {
-      border-radius: 5px;
-      padding: 40px 35px;
-      text-align: center;
-      -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-              box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-      -webkit-transition: all 0.3s ease 0s;
-      transition: all 0.3s ease 0s;
-      background: #fff;
-      position: relative;
-      overflow: hidden;
-      margin-bottom: 30px; }
-      #features a .contain-item:hover {
-        background-color: #585CE9;
-        -webkit-transition: all 0.3s ease 0s;
-        transition: all 0.3s ease 0s; }
-      #features a .contain-item:hover .header h5 {
-        color: #fff;
-        -webkit-transition: all 0.3s ease 0s;
-        transition: all 0.3s ease 0s; }
-      #features a .contain-item:hover .text p {
-        color: #E5E9F7;
-        -webkit-transition: all 0.3s ease 0s;
-        transition: all 0.3s ease 0s; }
-      #features a .contain-item .logo {
-        width: 67px;
-        height: 67px;
-        line-height: 70px;
-        border-radius: 100%;
-        margin-bottom: 20px;
-        margin: auto;
-        background-color: #F7FAFD; }
-        #features a .contain-item .logo i {
-          font-size: 20px; }
-      #features a .contain-item .header h5 {
-        line-height: 28px;
-        letter-spacing: 1px;
-        text-align: center;
-        font-weight: 400;
-        font-size: 16px;
-        letter-spacing: 1.3px;
-        color: #697BA2;
-        position: relative;
-        color: #3B566E;
-        margin: 15px 0px;
-        font-weight: 700;
-        -webkit-transition: all 0.3s ease 0s;
-        transition: all 0.3s ease 0s; }
-      #features a .contain-item .text p {
-        line-height: 26px;
-        letter-spacing: 0.88px;
-        font-size: 14px;
-        font-weight: 400;
-        color: #6F8BA4;
-        -webkit-transition: all 0.3s ease 0s;
-        transition: all 0.3s ease 0s;
-        font-weight: 400; }
-
-.section-header-left .name h1 {
-  font-size: 28px;
-  color: #1E3056;
-  line-height: 46px;
-  letter-spacing: 0.93px;
-  margin-bottom: 20px; }
-  .section-header-left .name h1 span {
-    color: #585CE9; }
-.section-header-left .text p {
-  line-height: 28px;
-  letter-spacing: 1px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 1.3px;
-  color: #697BA2;
-  position: relative;
-  text-align: left;
-  margin-bottom: 40px; }
-.section-header-left .button {
-  padding: 12px 50px; }
 
 @font-face {
   font-family: 'Nunito';

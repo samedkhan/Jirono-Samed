@@ -1,0 +1,22 @@
+.section-header-left{        
+    .name{
+        
+        h1{
+            @include intro-header-h1;
+            
+            span{
+                color: $c-blue;
+            }
+        }        
+    }
+    .text{
+        p{
+            @include section-header-text-property;
+            text-align: left;
+            margin-bottom: 40px;
+        }
+    }
+    .button{
+        padding: 12px 50px;
+    }
+}

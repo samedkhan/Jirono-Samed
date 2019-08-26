@@ -9,28 +9,7 @@
   .align-self-center{
       align-self: center !important;
   }
-    .section-header{        
-        .section-header-name{
-            
-            h1{
-                @include intro-header-h1;
-                
-                span{
-                    color: $c-blue;
-                }
-            }        
-        }
-        .section-header-contain{
-            p{
-                @include section-header-text-property;
-                text-align: left !important;
-                margin-bottom: 40px;
-            }
-        }
-        .button{
-            padding: 12px 50px;
-        }
-    }
+    
     
 
     .section-contain{
