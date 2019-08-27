@@ -1,60 +1,66 @@
 #footer{
-    background-color: $c-blue;
+    
+ background-color: $c-blue;
     padding-top: 70px;
     color: $c-white;   
     font-family: $f-regular;
-    .item-header{
-        margin: $mb-30;
-        h5{
-            @include H5-property;
-        }        
-    }
-    .item-contain{
-        @include item-text-property;
-        ul{
-            li{
-                padding: 0px 0px 10px 0px;
-                a{
-                    @include footer-nav-a-property;
-                    i{
-                        margin-right:10px;
-                        font-size:10px;
+    .row{
+        display: block;
+        .item-header{
+            margin: $mb-30;
+            h5{
+                @include H5-property;
+            }        
+        }
+        .item-contain{
+            @include item-text-property;
+            ul{
+                li{
+                    padding: 0px 0px 10px 0px;
+                    a{
+                        @include footer-nav-a-property;
+                        i{
+                            margin-right:10px;
+                            font-size:10px;
+                        }
+                        span{
+                            transition: $t-regular;
+                            position:absolute;
+                        }
+                        &:hover span{
+                            transform: translateX(5px);
+                            transition: $t-regular;
+                        }
                     }
-                    span{
-                        transition: $t-regular;
-                        position:absolute;
-                    }
-                    &:hover span{
-                        transform: translateX(5px);
-                        transition: $t-regular;
+                }
+            }
+            .footer-social{
+                li{
+                    display:inline-block;
+                    padding: 5px 5px 0px 0px;
+                    a{
+                        text-align: center;
+                        background-color: white;
+                        color: $c-blue;
+                        border-radius: 3px;
+                        padding: 1px 5px;
+                        box-shadow: $bs-header;
+                        i{
+                            margin-right:0px;
+                            font-size: 12px;
+                        }
                     }
                 }
             }
         }
-        .footer-social{
-            li{
-                display:inline-block;
-                padding: 5px 5px 0px 0px;
-                a{
-                    text-align: center;
-                    background-color: white;
-                    color: $c-blue;
-                    border-radius: 3px;
-                    padding: 1px 5px;
-                    box-shadow: $bs-header;
-                    i{
-                        margin-right:0px;
-                        font-size: 12px;
-                    }
-                }
-            }
+        .copyright{
+            @include item-text-property;
+            text-align: center;
+            border-top: 1px solid #fff;
+            padding: 35px 0px 40px;
+            margin-top: 40px;
+        }
         }
     }
-    .copyright{
-        @include item-text-property;
-        text-align: center;
-        border-top: 1px solid #fff;
-        padding: 35px 0px 40px;
-        margin-top: 40px;
-    }
-}
+    
+   
