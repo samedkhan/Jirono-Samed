@@ -321,7 +321,7 @@ hr {
   margin-left: auto;
 }
 .row {
-  
+  align-items: center;
   flex-wrap: wrap;
   display: flex;
     margin-right: -15px;
