@@ -3,8 +3,14 @@
    background-color:  $c-background-colored;
    .content-photo{
        align-self: center;
-   }
-   .content{
+   }  
+}
+
+#design-development{
+    background-color: $c-white;
+}
+
+.content-cloudServices, .content-designDevelopment{
     width: 100%;
     margin: auto;
     display: inline-block;
@@ -66,9 +72,3 @@
         
     }
    }
-   
-}
-
-#design-development{
-    background-color: $c-white;
-}

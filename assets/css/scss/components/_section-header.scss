@@ -1,4 +1,4 @@
-.section-header-left{        
+.section-header-left, .section-header-center{        
     .name{
         
         h1{
@@ -18,5 +18,16 @@
     }
     .button{
         padding: 12px 50px;
+    }
+}
+
+.section-header-center{
+    .name{
+        text-align: center;
+    }
+    .text{
+        p{
+            text-align: center;
+        }
     }
 }
