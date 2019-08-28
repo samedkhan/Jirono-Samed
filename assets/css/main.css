@@ -394,6 +394,83 @@
     transition: all 0.3s ease 0s;
     font-weight: 400; }
 
+#price-plans {
+  padding: 100px 0px 80px 0px;
+  background-color: #F7FAFD; }
+
+.content-price {
+  border-radius: 5px;
+  text-align: center;
+  -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background: #fff;
+  position: relative;
+  margin-bottom: 70px; }
+  .content-price .name[data-active] {
+    background-color: #585CE9; }
+    .content-price .name[data-active] h3 {
+      color: white; }
+  .content-price .name {
+    padding: 40px;
+    border-bottom: 1px solid #F7FAFD;
+    position: relative; }
+    .content-price .name h3 {
+      line-height: 28px;
+      letter-spacing: 1px;
+      text-align: center;
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 1.3px;
+      color: #697BA2;
+      position: relative;
+      font-weight: 700; }
+    .content-price .name span {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      background-color: #F7FAFD;
+      color: #585CE9;
+      bottom: -19px;
+      left: 46%;
+      line-height: 40px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 700; }
+  .content-price .price {
+    margin-top: 60px;
+    margin-bottom: 30px; }
+    .content-price .price h5 {
+      margin: 0 auto;
+      font-weight: 700;
+      font-size: 34px;
+      color: #585CE9;
+      letter-spacing: 2.12px;
+      position: relative; }
+      .content-price .price h5::before {
+        content: '$';
+        font-family: "Nunito";
+        font-size: 20px;
+        position: absolute;
+        color: #585CE9;
+        font-weight: 900;
+        top: 0;
+        left: 26%; }
+      .content-price .price h5 span {
+        font-size: 14px;
+        letter-spacing: 0.88px; }
+  .content-price .property ul li {
+    padding: 10px 0px; }
+  .content-price .property ul .passive {
+    text-decoration: line-through;
+    color: #6f8ba482; }
+  .content-price .select {
+    padding: 35px 0px; }
+    .content-price .select .button {
+      padding: 10px 30px; }
+
 .section-header-left .name h1, .section-header-center .name h1 {
   font-size: 28px;
   color: #1E3056;

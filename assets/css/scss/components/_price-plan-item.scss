@@ -1,0 +1,91 @@
+#price-plans{
+    padding:$p-regular;
+    background-color:  $c-background-colored;
+    
+}
+.content-price{
+    border-radius: 5px;    
+    text-align: center;
+    box-shadow: $bs-regular;
+    transition: $t-regular;
+    background: $c-white;
+    position: relative;   
+    margin-bottom: 70px;
+    .name[data-active]{        
+            background-color: $c-blue;
+            h3{
+                color:white;
+            }
+    }
+    .name{
+        padding:40px;
+        border-bottom: 1px solid #F7FAFD;
+        position: relative;             
+        
+        h3{
+            @include section-header-text-property;
+            font-weight: 700;
+        }
+        span{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            background-color: $c-background-colored;
+            color: $c-blue;
+            bottom: -19px;
+            left: 46%;
+            line-height: 40px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
+        
+        }
+    }
+    .price{
+        margin-top: 60px;
+        margin-bottom: 30px; 
+        h5{
+            margin:0 auto;
+            font-weight: 700;
+            font-size: 34px;
+            color: $c-blue;
+            letter-spacing: 2.12px;
+            position: relative;
+            &::before{
+                content: '$';
+                font-family: "Nunito";
+                font-size: 20px;
+                position: absolute;
+                color: #585CE9;
+                font-weight: 900;
+                top: 0;
+                left: 26%;
+            }
+            span{
+                font-size: 14px;
+                letter-spacing: 0.88px;
+                
+            }
+        }
+    }
+    .property{
+        ul{
+            li{
+                padding: 10px 0px;
+            }
+            .passive{
+                text-decoration: line-through;
+                color: #6f8ba482;
+            }
+        }
+    }
+    .select{
+        padding: 35px 0px;
+        .button{
+            padding: 10px 30px;
+        }
+    }
+    
+
+}
