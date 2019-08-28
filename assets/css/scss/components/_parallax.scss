@@ -7,6 +7,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
     &::before{
         content: '';
         position: absolute;
@@ -26,7 +28,7 @@
     &:hover{
         transform: translateY(-25px);
         transition: $t-regular;
-    }
+    }   
     strong{
         font-size:45px;
         font-weight: 700;
@@ -35,7 +37,6 @@
         position: relative;
         transition: $t-regular;
         display:block;
-        margin-top: 80px;
         &::after{
             content: '-------------------';
             position: absolute;
@@ -51,5 +52,30 @@
         font-size: 25px;
         line-height: 35px;
         letter-spacing: 0.86px;
+    }
+    
+}
+.content-contact{
+    .info{
+        text-align: center;
+        font-weight: 400;
+        font-size: 24px;
+        color: #fff;
+        padding: 20px 0px;
+        h3{
+            letter-spacing: 1px;
+            margin-bottom: 40px;
+           span{
+                text-decoration: underline;
+            }
+        }
+        .button{
+            @include button-parallax-blog;
+            
+            &:hover{
+                background-color: $c-blue;
+                transition: $t-regular;
+            }
+        }
     }
 }

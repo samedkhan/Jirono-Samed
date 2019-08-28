@@ -1,0 +1,40 @@
+#blog{
+    padding:$p-regular;
+    background-color:$c-background-colored;
+    .content-blog{
+        text-align: center;
+       
+        .photo{
+            height:200px;
+            border-radius:10px;
+            overflow: hidden;
+            box-shadow: $bs-regular;
+            img{
+                width:100%;
+            }
+        }
+        .name{
+            margin: 20px 0px;
+            h3{
+                @include section-header-text-property;
+                color: $c-dark;
+            }
+        }
+        .text{
+            margin: 20px 0px 30px;
+            p{
+                @include item-text-property;
+                color:  $c-gray;
+            }
+        }
+        .button{
+            @include button-parallax-blog;
+            background-color: $c-blue;
+            &:hover{
+                background-color: #4146e6;
+                transition: $t-regular;
+                color:$c-white;
+            }
+        }
+    }
+}

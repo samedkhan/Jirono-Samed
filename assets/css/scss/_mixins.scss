@@ -35,5 +35,14 @@
     margin-bottom: 20px;
 }
 
+@mixin button-parallax-blog {
+    display: inline-block;            
+            padding: 10px 40px;
+            background-color: $c-white;
+            font-size: 14px;
+            line-height: 19px;
+            transition: $t-regular;
+           
+}
 
     
