@@ -141,8 +141,6 @@
       margin-top: 40px; }
 
 #header {
-  -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
   position: fixed;
   top: 0;
   left: 0;
@@ -395,7 +393,10 @@
   background: #fff;
   position: relative;
   overflow: hidden;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px); }
   .content-features:hover {
     background-color: #585CE9;
     -webkit-transition: all 0.3s ease 0s;

@@ -16,6 +16,8 @@
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
+    opacity:0;
+    transform: translateY(30px);
     &:hover{
         background-color: $c-blue;
         transition: $t-regular;
