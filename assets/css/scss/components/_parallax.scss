@@ -1,4 +1,4 @@
-#parallax{   
+#parallax-digits, #parallax-contact{   
     min-height: 315px;
     overflow: hidden;
     position:relative;
@@ -38,10 +38,10 @@
         transition: $t-regular;
         display:block;
         &::after{
-            content: '-------------------';
+            content: '----------------';
             position: absolute;
             top: 45px;
-            left: 50px;
+            left: 55px;
             font-size: 18px;
         }
     }

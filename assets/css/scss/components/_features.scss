@@ -1,5 +1,5 @@
 #features{
-    padding-bottom:80px;
+    padding-bottom:$p-regular;
     a{
         text-decoration: none;
         color:$c-blue;        
@@ -15,9 +15,10 @@
     background: $c-white;
     position: relative;
     overflow: hidden;
-    margin-bottom: 30px;
+    margin: 30px 0px;
+
     opacity:0;
-    transform: translateY(30px);
+    transform: translateY(50px);
     &:hover{
         background-color: $c-blue;
         transition: $t-regular;

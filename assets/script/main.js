@@ -4,6 +4,12 @@ $(document).ready(function(){
     var features = $("#features");
     var featuresItem = $(".content-features");
 
+    var cloudservices = $('#cloud-services');
+    var cloudservicesPhoto = $('.content-photo');
+
+    var parallaxDigits = $('#parallax-digits');
+    let digit = $('.content-parallax strong');
+
    $(window).scroll((e)=>{
 
     // NAVIGATION MENU
@@ -23,22 +29,49 @@ $(document).ready(function(){
     // END of NAVIGATION MENU
 
 
+    // FEATURES 
+    if(e.currentTarget.scrollY > (features[0].offsetTop - 450)){ 
 
+        $.each(featuresItem, function(index){
+            let time = [index+1]*0.4;
+            $(this).css({
+                   "transform" : 'translateY(-50px)',
+                   "transition" : 'all ' +  time + 's linear 0s',
+                   "opacity" : '1'
+             })    
 
-    if(e.currentTarget.scrollY > (features[0].offsetTop - 500)){
-        // featuresItem.css({
-        //     "transform" : 'translateY(-50px)',
-        //     "transition" : 'all 0.3s ease 0s',
-        //     "opacity" : '1'
-        // })
-
-        console.log(featuresItem);
+     });
+     
     }
+    // END OF FEATURES
 
- 
-    // console.log(e.currentTarget.scrollY);
-    // console.log(navmenuHeight);
 
-   })
+
+    //CLOUD SERVICES & DESIGN DEVELOPMENT   
+    if(e.currentTarget.scrollY > (cloudservices[0].offsetTop - 120)){ 
+
+        $.each(cloudservicesPhoto, function(index){
+            let time = [index+1]*0.4;
+            $(this).css({
+                   "transform" : 'translateX(50px)',
+                   "transition" : 'all ' +  time + 's linear 0s',
+                   "opacity" : '1'
+             })    
+
+     });
+    }
+    //END CLOUD SERVICES & DESIGN DEVELOPMENT  
+
+
+
   
-  });
+
+
+    if(e.currentTarget.scrollY > (parallaxDigits[0].offsetTop - 450)){}
+
+    
+
+     
+
+});
+});

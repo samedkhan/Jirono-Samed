@@ -3,6 +3,8 @@
    background-color:  $c-background-colored;
    .content-photo{
        align-self: center;
+       position: relative;
+       opacity:0;
    }  
 }
 
