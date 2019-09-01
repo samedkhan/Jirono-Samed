@@ -1,5 +1,5 @@
 #price-plans{
-    padding:$p-regular;
+    padding:40px 0px 20px 0px;
     background-color:  $c-background-colored;
     
 }
@@ -10,7 +10,7 @@
     transition: $t-regular;
     background: $c-white;
     position: relative;   
-    margin-bottom: 70px;
+    margin: 70px 0px 0px;
     .name[data-active]{        
         background-image: linear-gradient(135deg, #585CE9 0%, #5C83E3 100%);
             h3{

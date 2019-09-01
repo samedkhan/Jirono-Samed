@@ -299,6 +299,7 @@ hr {
   margin-right: auto;
   margin-left: auto;
 }
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -322,7 +323,7 @@ hr {
 }
 .row {
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   display: flex;
     margin-right: -15px;
     margin-left: -15px;
