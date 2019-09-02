@@ -5,9 +5,9 @@ $(document).ready(function(){
     
     var featuresItem = $(".content-features");
     
-    var cloudservicesPhoto = $('#cloud-services .content-photo');    
+    var cloudservicesPhoto = $('#cloud-services .content-photo img');    
 
-    var designdevelopmentPhoto = $('#design-development .content-photo');  
+    var designdevelopmentPhoto = $('#design-development .content-photo img');  
 
     var priceplanItem = $('#price-plans .content-price');  
 
@@ -71,13 +71,13 @@ $(document).ready(function(){
         }
         //END OF CLOUD SERVICES FADE-LEFT
 
-        //DESIGN DEVELOPMENT FADE-RIGHT
+        //DESIGN DEVELOPMENT FADE-LEFT
         let designdevelopmentSectionTop = $('#design-development').offset().top;
         let designdevelopmentSectionMidlle = designdevelopmentSectionTop + $('#design-development').height()/2 
         if(viewTop<designdevelopmentSectionTop && designdevelopmentSectionMidlle<viewBottom){
-            FadeIn(designdevelopmentPhoto, "right");
+            FadeIn(designdevelopmentPhoto, "left");
         }
-        //END OF DESIGN DEVELOPMENT FADE-RIGHT
+        //END OF DESIGN DEVELOPMENT FADE-LEFT
 
         let priceplanSectionTop = $('#price-plans').offset().top;
         let priceplanSectionMidlle = priceplanSectionTop + $('#price-plans').height()/2 

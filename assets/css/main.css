@@ -330,9 +330,7 @@
 #cloud-services, #design-development {
   padding: 100px 0px 80px 0px;
   background-color: #F7FAFD; }
-  #cloud-services .content-photo, #design-development .content-photo {
-    -ms-flex-item-align: center;
-        align-self: center;
+  #cloud-services .content-photo img, #design-development .content-photo img {
     position: relative;
     opacity: 0; }
 
@@ -851,11 +849,28 @@ Creation date: 24/08/2019 12:54
   content: "\f112"; }
 
 @media only screen and (max-width: 991px) {
-  .section-header-left {
+  #intro .section-contain {
+    margin-top: 50px; }
+  #intro .section-header-left {
     text-align: center; }
-    .section-header-left .text p {
-      text-align: center; } }
+    #intro .section-header-left .text p {
+      text-align: center; }
+
+  #cloud-services .content-photo, #design-development .content-photo {
+    padding: 30px 0px 0px; }
+    #cloud-services .content-photo img, #design-development .content-photo img {
+      margin: 0 auto;
+      display: block;
+      -webkit-transform: translateX(0px) !important;
+              transform: translateX(0px) !important; }
+
+  #design-development .content-photo {
+    padding: 0px 0px 30px; } }
 body {
   font-family: "Nunito"; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 /*# sourceMappingURL=main.css.map */
