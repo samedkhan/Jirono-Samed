@@ -10,11 +10,15 @@
         float: left;
     }
     .navigation-bar{  
-        height: 25px;
         padding: 25px 0px;
         font-family: $f-regular;
+        .flaticon-layer{
+            display:none;
+            cursor: pointer;
+        }
         .menu{
             float: left;
+            
             ul{
                 padding: 5px;
                 margin-left: 60px;

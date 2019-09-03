@@ -11,6 +11,8 @@ $(document).ready(function(){
 
     var priceplanItem = $('#price-plans .content-price');  
 
+    var triggerMenu = $('#header .flaticon-layer');
+
     $(document).on('scroll',function(){
         const viewTop = $(document).scrollTop();  //Ekranin yuxari heddi
         const viewBottom = viewTop +$(window).height(); //Ekranin asagi heddine qeder olan mesafe
@@ -86,20 +88,30 @@ $(document).ready(function(){
         }
     })
     
-    // SMOOTH SLIDE SECTIONS
+    // SMOOTH SLIDE SECTIONS ON NAVBAR MENU
     $('a[href^="#"]').on('click', function(e) {
         e.preventDefault()
-      if($(this).attr('href').length>1){
-        $('html, body').animate(
-            {
-              scrollTop: $($(this).attr('href')).offset().top,
-            },
-            500,
-            'linear'
-          )
-      }
+        if($(this).attr('href').length>1){
+            if($(window).width()<991){
+                $("#header .menu").slideToggle();
+            }
+           $('html, body').animate(
+               {
+                 scrollTop: $($(this).attr('href')).offset().top,
+               },
+               1000,
+               'linear'
+             )
+         }
+      
       })
     // END OF SMOOTH SLIDE SECTIONS
+
+    triggerMenu.click(function(){
+        $("#header .menu").slideToggle();
+    })
+    
+
 
 function FadeIn(items, type){
     $.each(items, function(index){

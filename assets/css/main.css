@@ -174,9 +174,11 @@
   #header .logo {
     float: left; }
   #header .navigation-bar {
-    height: 25px;
     padding: 25px 0px;
     font-family: "Nunito"; }
+    #header .navigation-bar .flaticon-layer {
+      display: none;
+      cursor: pointer; }
     #header .navigation-bar .menu {
       float: left; }
       #header .navigation-bar .menu ul {
@@ -853,16 +855,33 @@ Creation date: 24/08/2019 12:54
 .flaticon-play-button:before {
   content: "\f112"; }
 
+.flaticon-layers:before {
+  content: "\f113"; }
+
+.flaticon-layer:before {
+  content: "\f114"; }
+
 @media only screen and (max-width: 991px) {
   * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
 
+  #header .flaticon-layer {
+    display: block !important;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 40px;
+    text-decoration: none;
+    color: black; }
   #header .menu {
     width: 100%;
     position: absolute;
-    display: block;
-    margin-top: 40px; }
+    display: none;
+    margin-top: 40px;
+    padding: 0px;
+    left: 0;
+    right: 0; }
     #header .menu ul {
       margin-left: 0px !important; }
       #header .menu ul .main-menu {
@@ -877,6 +896,12 @@ Creation date: 24/08/2019 12:54
           top: 15px !important;
           content: "\f10f";
           font-family: "Flaticon"; }
+        #header .menu ul .main-menu[data-submenu]:hover .submenu {
+          height: auto !important; }
+        #header .menu ul .main-menu:hover {
+          background-color: #f5f5f5; }
+        #header .menu ul .main-menu:hover > a {
+          background-color: #f5f5f5 !important; }
         #header .menu ul .main-menu .submenu {
           position: relative;
           visibility: inherit;
@@ -886,11 +911,15 @@ Creation date: 24/08/2019 12:54
                   transform: translateY(0%);
           -webkit-transition-delay: 0s, 0s, 0.3s;
                   transition-delay: 0s, 0s, 0.3s;
-          top: 0px;
-          width: 100%;
           -webkit-box-shadow: none;
                   box-shadow: none;
-          height: 0px; }
+          height: 0px;
+          width: 100% !important;
+          position: relative !important;
+          top: 0 !important;
+          display: block; }
+          #header .menu ul .main-menu .submenu li {
+            padding-left: 30px !important; }
         #header .menu ul .main-menu a {
           height: 50px !important;
           line-height: 50px !important;

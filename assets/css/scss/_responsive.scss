@@ -3,12 +3,24 @@
         box-sizing: border-box;
     }
     #header{
+        .flaticon-layer{
+            display: block !important;
+            position: absolute;
+            top: 10px;
+            right: 30px;
+            font-size: 40px;
+            text-decoration: none;
+            color: black;            
+        }
         .menu{
             width: 100%;
             position: absolute;
-            display: block;
+            display: none;
             margin-top: 40px;
-           
+            padding: 0px;
+            left: 0;
+            right: 0;
+            
             ul{
                 margin-left:0px !important;
                 .main-menu{
@@ -22,20 +34,36 @@
                         font-size: 14px !important;
                         top: 15px !important;
                         content: "\f10f";
-                        font-family: "Flaticon";
-                   
+                        font-family: "Flaticon";                   
+                    }
+                    &[data-submenu]:hover .submenu{
+                        height: auto !important;
+                    }
+                    &:hover{
+                        background-color: #f5f5f5;
+                       
+                    }
+                    &:hover>a{
+                        
+                            background-color: #f5f5f5 !important; 
+
                     }
                     .submenu{
                         position: relative;
-    visibility: inherit;
-    opacity: 1;
-    z-index: 1;
-    transform: translateY(0%);
-    transition-delay: 0s, 0s, 0.3s;
-    top: 0px;
-    width: 100%;
-    box-shadow: none;
-    height: 0px;
+                        visibility: inherit;
+                        opacity: 1;
+                        z-index: 1;
+                        transform: translateY(0%);
+                        transition-delay: 0s, 0s, 0.3s;
+                        box-shadow: none;
+                        height: 0px;
+                        width: 100% !important;
+                        position: relative !important;
+                        top: 0 !important;
+                        display:block;
+                        li{
+                            padding-left:30px !important;
+                        }
                     }
         a{
             height: 50px !important;
