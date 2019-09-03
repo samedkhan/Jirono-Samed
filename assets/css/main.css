@@ -163,6 +163,7 @@
       margin-top: 40px; }
 
 #header {
+  min-height: 70px;
   position: fixed;
   top: 0;
   left: 0;
@@ -185,6 +186,13 @@
           display: inline-block;
           padding: 0px 30px;
           position: relative; }
+          #header .navigation-bar .menu ul .main-menu[data-submenu]::after {
+            right: 8px;
+            font-size: 10px;
+            top: 4px;
+            content: "\f10f";
+            font-family: "Flaticon";
+            position: absolute; }
           #header .navigation-bar .menu ul .main-menu:hover .submenu {
             visibility: visible;
             opacity: 1;
@@ -199,11 +207,6 @@
             color: #fff;
             color: #6F8BA4;
             font-weight: 600; }
-            #header .navigation-bar .menu ul .main-menu a[data-submenu]::after {
-              content: "\f10f";
-              font-family: "Flaticon";
-              margin-left: 15px;
-              font-size: 8px; }
           #header .navigation-bar .menu ul .main-menu .submenu {
             position: absolute;
             margin-left: 0px;
@@ -520,15 +523,13 @@
       color: #585CE9;
       letter-spacing: 2.12px;
       position: relative; }
-      .content-price .price h5::before {
-        content: '$';
-        font-family: "Nunito";
+      .content-price .price h5 .currency {
+        height: 47px;
+        font-weight: 700;
         font-size: 20px;
-        position: absolute;
-        color: #585CE9;
-        font-weight: 900;
-        top: 0;
-        left: 26%; }
+        position: relative;
+        top: -15px;
+        color: #585CE9; }
       .content-price .price h5 span {
         font-size: 14px;
         letter-spacing: 0.88px; }
@@ -711,11 +712,15 @@
     transition: all 0.3s ease 0s;
     display: block; }
     .content-parallax strong::after {
-      content: '----------------';
+      content: '';
       position: absolute;
-      top: 45px;
-      left: 55px;
-      font-size: 18px; }
+      left: 0px;
+      right: 0px;
+      top: 65px;
+      margin: auto;
+      width: 115px;
+      height: 1px;
+      border-top: 2px dashed #fff; }
   .content-parallax span {
     display: block;
     color: #fff;
@@ -849,6 +854,54 @@ Creation date: 24/08/2019 12:54
   content: "\f112"; }
 
 @media only screen and (max-width: 991px) {
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+
+  #header .menu {
+    width: 100%;
+    position: absolute;
+    display: block;
+    margin-top: 40px; }
+    #header .menu ul {
+      margin-left: 0px !important; }
+      #header .menu ul .main-menu {
+        display: block !important;
+        background: #fff;
+        border-bottom: 1px solid #f5f5f5;
+        padding-left: 0px !important;
+        padding-right: 0px !important; }
+        #header .menu ul .main-menu[data-submenu]::after {
+          right: 25px !important;
+          font-size: 14px !important;
+          top: 15px !important;
+          content: "\f10f";
+          font-family: "Flaticon"; }
+        #header .menu ul .main-menu .submenu {
+          position: relative;
+          visibility: inherit;
+          opacity: 1;
+          z-index: 1;
+          -webkit-transform: translateY(0%);
+                  transform: translateY(0%);
+          -webkit-transition-delay: 0s, 0s, 0.3s;
+                  transition-delay: 0s, 0s, 0.3s;
+          top: 0px;
+          width: 100%;
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          height: 0px; }
+        #header .menu ul .main-menu a {
+          height: 50px !important;
+          line-height: 50px !important;
+          padding: 0px !important;
+          padding-left: 30px !important;
+          border: none !important;
+          background: #fff !important;
+          color: #3B566E !important; }
+  #header .registration {
+    display: none; }
+
   #intro .section-contain {
     margin-top: 50px; }
   #intro .section-header-left {
@@ -865,7 +918,24 @@ Creation date: 24/08/2019 12:54
               transform: translateX(0px) !important; }
 
   #design-development .content-photo {
-    padding: 0px 0px 30px; } }
+    padding: 0px 0px 30px; }
+
+  #parallax-digits .content-parallax {
+    padding: 20px 0px; }
+    #parallax-digits .content-parallax strong {
+      margin-bottom: 10px; }
+
+  #price-plans .content-price {
+    margin-bottom: 30px; }
+
+  #blog .content-blog {
+    margin-bottom: 30px;
+    padding: 0px 20px; }
+
+  #footer .footer-item {
+    padding: 20px 0px; }
+    #footer .footer-item .item-header {
+      margin-bottom: 15px; } }
 body {
   font-family: "Nunito"; }
 

@@ -1,5 +1,5 @@
 #header{
-    
+    min-height: 70px;
     position: fixed;
     top:0;
     left:0;
@@ -22,6 +22,14 @@
                     display:inline-block;
                     padding: 0px 30px;
                     position: relative;  
+                    &[data-submenu]::after{
+                        right: 8px;
+                        font-size: 10px;
+                        top: 4px;
+                        content: "\f10f";
+                        font-family: "Flaticon";
+                        position: absolute;
+                    }
                     &:hover{
                         .submenu{
                             visibility: visible;
@@ -35,12 +43,7 @@
                         @include footer-nav-a-property;
                         color:$c-gray;
                         font-weight: 600;
-                        &[data-submenu]::after{
-                            content: "\f10f";
-                            font-family: "Flaticon";
-                            margin-left: 15px;
-                            font-size: 8px;
-                        }
+                        
                         
                         
                     }

@@ -45,23 +45,23 @@
     .price{
         margin-top: 60px;
         margin-bottom: 30px; 
+        
         h5{
+            .currency{
+                height:47px;
+                font-weight:700;
+                font-size: 20px;
+                position: relative;
+                top:-15px;
+                color: $c-blue;
+            }
             margin:0 auto;
             font-weight: 700;
             font-size: 34px;
             color: $c-blue;
             letter-spacing: 2.12px;
             position: relative;
-            &::before{
-                content: '$';
-                font-family: "Nunito";
-                font-size: 20px;
-                position: absolute;
-                color: #585CE9;
-                font-weight: 900;
-                top: 0;
-                left: 26%;
-            }
+      
             span{
                 font-size: 14px;
                 letter-spacing: 0.88px;

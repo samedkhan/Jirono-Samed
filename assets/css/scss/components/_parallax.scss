@@ -38,11 +38,15 @@
         transition: $t-regular;
         display:block;
         &::after{
-            content: '----------------';
+            content: '';
             position: absolute;
-            top: 45px;
-            left: 55px;
-            font-size: 18px;
+            left: 0px;
+            right: 0px;
+            top: 65px;
+            margin: auto;
+            width: 115px;
+            height: 1px;
+            border-top: 2px dashed #fff;
         }
     }
     span{
