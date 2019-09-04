@@ -2,15 +2,43 @@
     *{
         box-sizing: border-box;
     }
+    .row{
+        display: block !important;
+        margin-right: -5px !important;
+        margin-left: -5px !important;
+    }
     #header{
-        .flaticon-layer{
+        .trigger{
             display: block !important;
             position: absolute;
-            top: 10px;
-            right: 30px;
-            font-size: 40px;
+            top: 8px;
+            right: 6px;
             text-decoration: none;
-            color: black;            
+            color: black;
+            .top,.bottom,.middle{
+                width: 35px;
+                border: 1px solid black;
+                margin: 13px;
+                position: relative;  
+                transition: $t-regular;          
+            }
+            .middle{
+                width:45px;
+            }         
+        }
+        .active{
+            .top,.bottom{
+                transition: $t-regular;
+            }
+            .top{
+                transform: rotate(45deg) translateY(22px) translateX(-2px);
+            }
+            .middle{
+                display: none;
+            }
+            .bottom{
+                transform: rotate(-45deg) translateX(-12px) translateY(-13px);
+            }
         }
         .menu{
             width: 100%;

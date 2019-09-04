@@ -11,7 +11,7 @@ $(document).ready(function(){
 
     var priceplanItem = $('#price-plans .content-price');  
 
-    var triggerMenu = $('#header .flaticon-layer');
+    var triggerMenu = $('#header .trigger');
 
     $(document).on('scroll',function(){
         const viewTop = $(document).scrollTop();  //Ekranin yuxari heddi
@@ -107,10 +107,12 @@ $(document).ready(function(){
       })
     // END OF SMOOTH SLIDE SECTIONS
 
+    //Trigger MENU in RESPONSIVE SIDE  
     triggerMenu.click(function(){
         $("#header .menu").slideToggle();
+        $('#header .trigger').toggleClass('active');
     })
-    
+    //END of Trigger MENU in RESPONSIVE SIDE  
 
 
 function FadeIn(items, type){
