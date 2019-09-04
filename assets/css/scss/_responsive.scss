@@ -1,7 +1,9 @@
 @media only screen and (max-width: 991px){
     *{
+
         box-sizing: border-box;
     }
+  
     .row{
         display: block !important;
         margin-right: -5px !important;
@@ -168,6 +170,17 @@
             .item-header{
                 margin-bottom:15px;
             }
+        }
+    }
+
+    #about{
+        .photo, .text{
+            width:100% !important;
+            max-width: 100% !important;
+        }
+        .text{
+            position: relative !important;
+            margin-bottom: 80px;
         }
     }
 }

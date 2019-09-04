@@ -382,7 +382,7 @@
         transition: all 0.3s ease 0s; }
 
 #features {
-  padding-bottom: 100px 0px 80px 0px; }
+  padding-top: 50px; }
   #features a {
     text-decoration: none;
     color: #585CE9; }
@@ -645,7 +645,7 @@
     .content-team .photo img {
       width: 100%; }
 
-#parallax-digits, #parallax-contact {
+#parallax-digits, #parallax-contact, #parallax-aboutUs {
   min-height: 315px;
   overflow: hidden;
   position: relative;
@@ -660,7 +660,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  #parallax-digits::before, #parallax-contact::before {
+  #parallax-digits::before, #parallax-contact::before, #parallax-aboutUs::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -732,6 +732,104 @@
       background-color: #585CE9;
       -webkit-transition: all 0.3s ease 0s;
       transition: all 0.3s ease 0s; }
+
+#parallax-aboutUs {
+  background-image: url(../img/aboutUS.jpg);
+  margin-top: 70px; }
+  #parallax-aboutUs .content-aboutUs h1 {
+    font-weight: 400;
+    font-size: 36px;
+    height: 50px;
+    line-height: 46px;
+    letter-spacing: 1.4px;
+    color: #fff;
+    text-align: center;
+    position: relative; }
+    #parallax-aboutUs .content-aboutUs h1::before {
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      margin: auto;
+      width: 19px;
+      height: 2px;
+      background: #fff;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+  #parallax-aboutUs .links ul {
+    display: block;
+    text-align: center;
+    margin-top: 20px; }
+    #parallax-aboutUs .links ul li {
+      display: inline-block;
+      line-height: 26px;
+      letter-spacing: 0.88px;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.66px; }
+      #parallax-aboutUs .links ul li:first-child::after {
+        content: "\f111";
+        font-family: "Flaticon";
+        color: #fff;
+        font-size: 7px;
+        margin-left: 6px; }
+      #parallax-aboutUs .links ul li a {
+        text-decoration: none;
+        color: #E5E9F7; }
+
+#about {
+  background-color: #F7FAFD;
+  padding: 80px 0px;
+  position: relative; }
+  #about .left {
+    left: 0px; }
+  #about .right {
+    right: 0px; }
+  #about .float-right {
+    float: right; }
+  #about .photo {
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 65%; }
+    #about .photo:hover img {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+      -webkit-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+    #about .photo img {
+      width: 100%;
+      -webkit-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+  #about .text {
+    -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+            box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+    max-width: 38%;
+    border-radius: 10px;
+    position: absolute;
+    background-color: #fff;
+    top: 45px;
+    float: right;
+    padding: 11px 25px;
+    z-index: 99; }
+    #about .text h3 {
+      font-size: 28px;
+      color: #1E3056;
+      line-height: 46px;
+      letter-spacing: 0.93px;
+      margin-bottom: 20px;
+      color: #3B566E; }
+    #about .text p {
+      line-height: 28px;
+      letter-spacing: 1px;
+      text-align: center;
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 1.3px;
+      color: #697BA2;
+      position: relative;
+      text-align: justify;
+      margin-bottom: 30px; }
 
 @font-face {
   font-family: 'Nunito';
@@ -966,7 +1064,14 @@ Creation date: 24/08/2019 12:54
   #footer .footer-item {
     padding: 20px 0px; }
     #footer .footer-item .item-header {
-      margin-bottom: 15px; } }
+      margin-bottom: 15px; }
+
+  #about .photo, #about .text {
+    width: 100% !important;
+    max-width: 100% !important; }
+  #about .text {
+    position: relative !important;
+    margin-bottom: 80px; } }
 body {
   font-family: "Nunito"; }
 

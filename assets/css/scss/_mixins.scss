@@ -34,7 +34,15 @@
     letter-spacing: 0.93px;
     margin-bottom: 20px;
 }
-
+@mixin page-header-h1{
+    font-weight: 400;
+    font-size: 36px;
+    height: 50px;
+    line-height: 46px;
+    letter-spacing: 1.4px;
+    color: #fff;
+    text-align: center;
+}
 @mixin button-parallax-blog {
     display: inline-block;            
             padding: 10px 40px;
@@ -44,5 +52,6 @@
             transition: $t-regular;
            
 }
+
 
     

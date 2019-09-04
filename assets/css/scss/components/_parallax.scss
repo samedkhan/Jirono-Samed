@@ -1,4 +1,4 @@
-#parallax-digits, #parallax-contact{   
+#parallax-digits, #parallax-contact, #parallax-aboutUs{   
     min-height: 315px;
     overflow: hidden;
     position:relative;
@@ -20,6 +20,7 @@
         left: 0%;
     }    
 }
+
 .content-parallax{
     align-self: center;
     color:$c-white;
@@ -79,6 +80,55 @@
             &:hover{
                 background-color: $c-blue;
                 transition: $t-regular;
+            }
+        }
+    }
+}
+#parallax-aboutUs{
+    background-image: url(../img/aboutUS.jpg);
+    margin-top:70px;
+    .content-aboutUs{
+        
+        h1{
+            @include page-header-h1;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                margin: auto;
+                width: 19px;
+                height: 2px;
+                background: #fff;
+               box-sizing: border-box;
+            }
+        }
+    }
+    .links{
+        
+        ul{
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            li{
+                display: inline-block;
+                @include item-text-property;
+                letter-spacing: 0.66px;
+                &:first-child{
+                    &::after{
+                        content: "\f111";
+                        font-family: "Flaticon";
+                        color:$c-white;
+                        font-size: 7px;
+                        margin-left: 6px;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    color:#E5E9F7;
+                }
             }
         }
     }
