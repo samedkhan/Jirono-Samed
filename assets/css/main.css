@@ -1,3 +1,103 @@
+#about {
+  background-color: #F7FAFD;
+  padding: 80px 0px;
+  position: relative; }
+  #about .left {
+    left: 0px; }
+  #about .right {
+    right: 0px; }
+  #about .float-right {
+    float: right; }
+  #about .photo {
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 65%; }
+    #about .photo:hover img {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+      -webkit-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+    #about .photo img {
+      width: 100%;
+      -webkit-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+  #about .text {
+    -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+            box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+    max-width: 38%;
+    border-radius: 10px;
+    position: absolute;
+    background-color: #fff;
+    top: 45px;
+    float: right;
+    padding: 11px 25px;
+    z-index: 99; }
+    #about .text h3 {
+      font-size: 28px;
+      color: #1E3056;
+      line-height: 46px;
+      letter-spacing: 0.93px;
+      margin-bottom: 20px;
+      color: #3B566E; }
+    #about .text p {
+      line-height: 28px;
+      letter-spacing: 1px;
+      text-align: center;
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 1.3px;
+      color: #697BA2;
+      position: relative;
+      text-align: justify;
+      margin-bottom: 30px; }
+
+#faq {
+  padding: 100px 0px 80px 0px; }
+  #faq .name h1 {
+    color: #585CE9; }
+  #faq .faq-content {
+    -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+            box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08); }
+    #faq .faq-content .content-header {
+      padding-bottom: 20px;
+      padding: 11px 25px;
+      border-bottom: 1px solid #F7FAFD;
+      cursor: pointer;
+      -webkit-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+      #faq .faq-content .content-header:hover {
+        background-color: #F7FAFD;
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s; }
+        #faq .faq-content .content-header:hover h5 {
+          -webkit-transform: translateX(10px);
+                  transform: translateX(10px);
+          -webkit-transition: all 0.3s ease 0s;
+          transition: all 0.3s ease 0s; }
+      #faq .faq-content .content-header h5 {
+        line-height: 28px;
+        letter-spacing: 1px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 1.3px;
+        color: #697BA2;
+        position: relative;
+        text-align: left;
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        color: #3B566E; }
+    #faq .faq-content .content-text {
+      padding: 11px 25px;
+      display: none; }
+      #faq .faq-content .content-text p {
+        margin-bottom: 10px;
+        line-height: 26px;
+        letter-spacing: 0.88px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #6F8BA4; }
+
 #intro {
   overflow: hidden;
   position: relative;
@@ -778,59 +878,6 @@
         text-decoration: none;
         color: #E5E9F7; }
 
-#about {
-  background-color: #F7FAFD;
-  padding: 80px 0px;
-  position: relative; }
-  #about .left {
-    left: 0px; }
-  #about .right {
-    right: 0px; }
-  #about .float-right {
-    float: right; }
-  #about .photo {
-    border-radius: 10px;
-    overflow: hidden;
-    max-width: 65%; }
-    #about .photo:hover img {
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1);
-      -webkit-transition: all 0.3s ease 0s;
-      transition: all 0.3s ease 0s; }
-    #about .photo img {
-      width: 100%;
-      -webkit-transition: all 0.3s ease 0s;
-      transition: all 0.3s ease 0s; }
-  #about .text {
-    -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-            box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-    max-width: 38%;
-    border-radius: 10px;
-    position: absolute;
-    background-color: #fff;
-    top: 45px;
-    float: right;
-    padding: 11px 25px;
-    z-index: 99; }
-    #about .text h3 {
-      font-size: 28px;
-      color: #1E3056;
-      line-height: 46px;
-      letter-spacing: 0.93px;
-      margin-bottom: 20px;
-      color: #3B566E; }
-    #about .text p {
-      line-height: 28px;
-      letter-spacing: 1px;
-      text-align: center;
-      font-weight: 400;
-      font-size: 16px;
-      letter-spacing: 1.3px;
-      color: #697BA2;
-      position: relative;
-      text-align: justify;
-      margin-bottom: 30px; }
-
 @font-face {
   font-family: 'Nunito';
   src: url("../fonts/NunitoSans-Regular.WOFF");
@@ -1071,7 +1118,10 @@ Creation date: 24/08/2019 12:54
     max-width: 100% !important; }
   #about .text {
     position: relative !important;
-    margin-bottom: 80px; } }
+    margin-bottom: 80px; }
+
+  #faq .faq-content {
+    margin-top: 50px; } }
 body {
   font-family: "Nunito"; }
 

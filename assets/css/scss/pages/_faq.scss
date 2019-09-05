@@ -1,0 +1,43 @@
+#faq{
+    padding: $p-regular;
+    .name{
+        h1{
+            color:$c-blue;
+        }
+    }
+    .faq-content{
+        box-shadow: $bs-regular;
+        
+        .content-header{
+            padding-bottom:20px;
+            padding: 11px 25px;
+            border-bottom: 1px solid $c-background-colored;
+            cursor: pointer;
+            transition: $t-regular;
+            &:hover{
+                background-color: $c-background-colored;
+                transition: $t-regular;
+                h5{
+                    transform: translateX(10px);
+                            transition: $t-regular;
+                }
+            }
+            
+            h5{
+                @include section-header-text-property;
+                text-align: left;
+                transition: $t-regular;
+                color: $c-dark;
+            }
+        }
+        .content-text{
+            padding: 11px 25px;
+            display:none;
+            p{
+                margin-bottom: 10px;
+                @include item-text-property;
+                color: $c-gray;
+            }
+        }
+    }
+}

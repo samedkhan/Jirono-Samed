@@ -9,6 +9,8 @@
         margin-right: -5px !important;
         margin-left: -5px !important;
     }
+
+    // "HOME" PAGE RESPONSIVE PROPERTY
     #header{
         .trigger{
             display: block !important;
@@ -172,7 +174,11 @@
             }
         }
     }
-
+    // END of "HOME" PAGE RESPONSIVE PROPERTY
+    
+    
+    
+    // "ABOUT US" PAGE RESPONSIVE PROPERTY
     #about{
         .photo, .text{
             width:100% !important;
@@ -183,4 +189,15 @@
             margin-bottom: 80px;
         }
     }
+    // END of "ABOUT US" PAGE RESPONSIVE PROPERTY
+
+    
+
+    // "FAQ" PAGE RESPONSIVE PROPERTY
+    #faq{
+        .faq-content{
+            margin-top: 50px;
+        }
+    }
+    // End of "FAQ" PAGE RESPONSIVE PROPERTY
 }
