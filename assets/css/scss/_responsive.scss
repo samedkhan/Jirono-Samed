@@ -211,11 +211,22 @@
     }
      //END of "BLOG" PAGE and "BLOG_SINGLE" RESPONSIVE PROPERTY
 
+
+     //PARALLAX-ABOUT RESPONSIVE PROPERTY
      #parallax-aboutUs{
         .content-aboutUs{
             h1{
                 font-size:26px !important;
             }
         }
+     }
+     //END of PARALLAX-ABOUT RESPONSIVE PROPERTY
+
+     #contactpage{
+         .contact-information{
+             width:100% !important;
+             margin-top:30px !important;
+             margin-left:0% !important;
+         }
      }
 }

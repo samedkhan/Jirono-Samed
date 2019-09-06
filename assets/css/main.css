@@ -489,6 +489,112 @@
       transition: all 0.3s ease 0s;
       color: #fff; }
 
+#contactpage {
+  padding: 80px 0px;
+  background-color: #F7FAFD; }
+  #contactpage .map {
+    padding: 30px 0px; }
+    #contactpage .map .google-map {
+      -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+              box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08); }
+      #contactpage .map .google-map iframe {
+        width: 100%; }
+    #contactpage .map .contact-information {
+      width: 90%;
+      margin: 0 auto;
+      position: relative;
+      margin-left: 5%;
+      margin-top: -90px;
+      border-radius: 5px;
+      padding: 30px;
+      padding-bottom: 10px;
+      background-image: linear-gradient(135deg, #585CE9 0%, #5C83E3 100%);
+      -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+              box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+      color: white; }
+      #contactpage .map .contact-information .footer-social {
+        margin-top: 30px;
+        text-align: center;
+        margin-bottom: 20px; }
+      #contactpage .map .contact-information .item {
+        padding: 10px; }
+        #contactpage .map .contact-information .item span {
+          line-height: 28px;
+          letter-spacing: 1px;
+          text-align: center;
+          font-weight: 400;
+          font-size: 16px;
+          letter-spacing: 1.3px;
+          color: #697BA2;
+          position: relative;
+          color: white;
+          font-size: 14px; }
+  #contactpage .contact-bottom {
+    margin-top: 80px; }
+    #contactpage .contact-bottom h5 {
+      text-align: left !important;
+      line-height: 28px;
+      letter-spacing: 1px;
+      text-align: center;
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 1.3px;
+      color: #697BA2;
+      position: relative;
+      font-size: 18px;
+      margin-bottom: 28px; }
+    #contactpage .contact-bottom p {
+      margin-bottom: 28px;
+      line-height: 26px;
+      letter-spacing: 0.88px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #697BA2; }
+    #contactpage .contact-bottom .contact-form input, #contactpage .contact-bottom .contact-form textarea {
+      border: 1px solid #eee;
+      width: 100%;
+      height: 50px;
+      outline: none;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 5px;
+      -webkit-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+      margin-bottom: 30px; }
+      #contactpage .contact-bottom .contact-form input:focus, #contactpage .contact-bottom .contact-form textarea:focus {
+        border: 1px solid #585CE9;
+        padding-left: 30px;
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s; }
+    #contactpage .contact-bottom .contact-form textarea {
+      height: 150px;
+      resize: none;
+      padding: 20px; }
+    #contactpage .contact-bottom .contact-form button {
+      font-size: 14px;
+      text-decoration: none;
+      color: #fff;
+      color: #585CE9;
+      padding: 12px 70px;
+      border: 1px solid #585CE9;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 12px;
+      -webkit-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+      #contactpage .contact-bottom .contact-form button[data-checked] {
+        background-color: #585CE9;
+        color: #fff;
+        -webkit-box-shadow: 0 4px 5px 0 rgba(103, 67, 213, 0.24);
+                box-shadow: 0 4px 5px 0 rgba(103, 67, 213, 0.24);
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s; }
+      #contactpage .contact-bottom .contact-form button[data-checked]:hover {
+        background-color: #fff;
+        color: #585CE9;
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s; }
+
 #faq {
   padding: 100px 0px 80px 0px; }
   #faq .name h1 {
@@ -758,6 +864,21 @@
       border-top: 1px solid #fff;
       padding: 35px 0px 40px;
       margin-top: 40px; }
+
+.footer-social li {
+  display: inline-block;
+  padding: 5px 5px 0px 0px; }
+  .footer-social li a {
+    text-align: center;
+    background-color: white;
+    color: #585CE9;
+    border-radius: 3px;
+    padding: 1px 5px;
+    -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+            box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06); }
+    .footer-social li a i {
+      margin-right: 0px;
+      font-size: 12px; }
 
 #header {
   min-height: 70px;
@@ -1647,7 +1768,12 @@ Creation date: 24/08/2019 12:54
     margin-top: 50px !important; }
 
   #parallax-aboutUs .content-aboutUs h1 {
-    font-size: 26px !important; } }
+    font-size: 26px !important; }
+
+  #contactpage .contact-information {
+    width: 100% !important;
+    margin-top: 30px !important;
+    margin-left: 0% !important; } }
 body {
   font-family: "Nunito"; }
 

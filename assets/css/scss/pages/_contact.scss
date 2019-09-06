@@ -1,0 +1,97 @@
+#contactpage{
+    padding:80px 0px;
+    background-color:  $c-background-colored;
+    .map{
+        padding: 30px 0px;
+        .google-map{
+            box-shadow: $bs-regular;
+            iframe{
+                width:100%;
+            }
+        }
+        .contact-information{
+            width: 90%;
+            margin: 0 auto;
+            position: relative;
+            margin-left: 5%;
+            margin-top: -90px;
+            border-radius: 5px;
+            padding: 30px;
+            padding-bottom: 10px;
+            background-image: linear-gradient(135deg, #585CE9 0%, #5C83E3 100%);
+            box-shadow: $bs-regular;
+            color: white;
+            .footer-social{
+                margin-top: 30px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .item{
+                padding: 10px;
+                span{
+                    @include section-header-text-property;
+                    color: white;
+                    font-size:14px;
+                }
+            }
+        }
+    }
+    .contact-bottom{
+        margin-top:80px;
+        h5{
+            text-align: left !important;
+                @include  section-header-text-property;
+                font-size:18px;
+                margin-bottom:28px;
+        }
+        p{
+            margin-bottom: 28px;
+            @include item-text-property;
+            color: #697BA2;
+        }
+        .contact-form{
+            input, textarea{
+                border: 1px solid #eee;
+                width: 100%;
+                height: 50px;
+                outline: none;
+                padding-left: 20px;
+                padding-right: 20px;
+                border-radius: 5px;
+                transition: $t-regular;
+                margin-bottom: 30px;
+                &:focus{
+                    border: 1px solid $c-blue;                  
+                    padding-left: 30px;
+                    transition: $t-regular;
+                }
+            }
+            textarea{
+                height: 150px;
+                resize: none;
+                padding: 20px;
+            }
+            button{
+                @include footer-nav-a-property;
+                color: $c-blue;
+                padding: 12px 70px;
+                border: 1px solid  $c-blue;
+                border-radius: 6px;
+                font-weight: 700;
+                font-size: $fs-button;
+                transition: $t-regular;
+                &[data-checked]{
+                    background-color: $c-blue;
+                    color: $c-white;
+                    box-shadow: $bs-checked-button;
+                    transition: $t-regular;
+                }
+                &[data-checked]:hover{
+                    background-color: $c-white;
+                    color: $c-blue;
+                    transition: $t-regular;
+                }
+        }
+    }
+    }
+}
