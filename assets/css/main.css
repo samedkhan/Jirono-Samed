@@ -618,6 +618,87 @@
         top: 41%;
         left: 37%; }
 
+#featurespage {
+  background-color: #F7FAFD;
+  padding: 80px 0px; }
+  #featurespage .features-contain {
+    padding: 30px;
+    -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+            box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+    background-color: white;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    #featurespage .features-contain a {
+      text-decoration: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      #featurespage .features-contain a:hover .icon:before {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s; }
+      #featurespage .features-contain a .icon {
+        float: left;
+        width: 166px;
+        position: relative;
+        text-align: center;
+        min-height: 166px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        #featurespage .features-contain a .icon img {
+          z-index: 2; }
+        #featurespage .features-contain a .icon:before {
+          content: '';
+          position: absolute;
+          top: 15px;
+          left: 15px;
+          width: 133px;
+          height: 133px;
+          background: #F7FAFD;
+          border-radius: 5px;
+          -webkit-transform: rotate(0deg);
+                  transform: rotate(0deg);
+          -webkit-transition: all 0.3s ease 0s;
+          transition: all 0.3s ease 0s; }
+      #featurespage .features-contain a .text {
+        -ms-flex-item-align: center;
+            align-self: center;
+        width: calc(100% - 190px); }
+        #featurespage .features-contain a .text h5 {
+          letter-spacing: 0.69px;
+          line-height: 30px;
+          font-size: 16px;
+          margin-bottom: 15px;
+          font-size: 18px;
+          color: #6F8BA4; }
+        #featurespage .features-contain a .text p {
+          line-height: 26px;
+          letter-spacing: 0.88px;
+          font-size: 14px;
+          font-weight: 400;
+          color: #6F8BA4; }
+
 #footer {
   background-color: #585CE9;
   padding-top: 70px;
