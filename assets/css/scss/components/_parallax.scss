@@ -92,6 +92,7 @@
         h1{
             @include page-header-h1;
             position: relative;
+            padding-bottom: 15px;
             &::before{
                 content: '';
                 position: absolute;

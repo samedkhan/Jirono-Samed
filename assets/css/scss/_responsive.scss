@@ -5,9 +5,9 @@
     }
   
     .row{
-        display: block !important;
-        margin-right: -5px !important;
-        margin-left: -5px !important;
+        display: block;
+        // margin-right: -5px !important;
+        // margin-left: -5px !important;
     }
 
     // "HOME" PAGE RESPONSIVE PROPERTY
@@ -201,12 +201,21 @@
     }
     // End of "FAQ" PAGE RESPONSIVE PROPERTY
 
-    //"BLOG" PAGE RESPONSIVE PROPERTY
-    #blogpage{
+    //"BLOG" PAGE and "BLOG_SINGLE" RESPONSIVE PROPERTY
+    #blogpage, #blogsinglepage{
         .sidebar{
             .search{
                 margin-top:50px !important;
             }
         }
     }
+     //END of "BLOG" PAGE and "BLOG_SINGLE" RESPONSIVE PROPERTY
+
+     #parallax-aboutUs{
+        .content-aboutUs{
+            h1{
+                font-size:26px !important;
+            }
+        }
+     }
 }
