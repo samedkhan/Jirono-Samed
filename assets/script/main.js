@@ -2,21 +2,12 @@ $(document).ready(function(){
     let alreadyDid = false;
 
     var navmenu = $("#header");
-    
-    var featuresItem = $(".content-features");
-    
-    var cloudservicesPhoto = $('#cloud-services .content-photo img');    
-
-    var designdevelopmentPhoto = $('#design-development .content-photo img');  
-
-    var priceplanItem = $('#price-plans .content-price');  
 
     var triggerMenu = $('#header .trigger');
 
     $(document).on('scroll',function(){
         const viewTop = $(document).scrollTop();  //Ekranin yuxari heddi
         const viewBottom = viewTop +$(window).height(); //Ekranin asagi heddine qeder olan mesafe
-        
         
         // NAVIGATION MENU
         if(viewTop > navmenu[0].clientHeight){
@@ -35,57 +26,69 @@ $(document).ready(function(){
         // END of NAVIGATION MENU       
         
         
-        //PARALLAX DIGIT counterup 
-        let digits = $('.content-parallax strong');
-        var limits = [96, 190, 12, 46];
-        const time = 1000;        
-        let parallaxSectionTop = $('#parallax-digits').offset().top;
-        let parallaxSectionMidlle = parallaxSectionTop + $('#parallax-digits').height()/2;       
-        if(viewTop<parallaxSectionTop && parallaxSectionMidlle<viewBottom && !alreadyDid){
-            alreadyDid = true;
-            $(digits).each((index, digit)=>{
-                let count = 1;
-                const Counter = setInterval(function(){
-                        if(count>=limits[index]){                    
-                            clearInterval(Counter)                        
-                        }                                        
-                        $(digit).text(count++)
-                },time/limits[index])
-            })
-        }
-        //END of PARALLAX DIGIT counterup       
+        //#PARALLAX DIGIT counterup 
+        if($('.content-parallax strong').length>0){
+            let digits = $('.content-parallax strong');
+            var limits = [96, 190, 12, 46];
+            const time = 1000;        
+            let parallaxSectionTop = $('#parallax-digits').offset().top;
+            let parallaxSectionMidlle = parallaxSectionTop + $('#parallax-digits').height()/2;       
+            if(viewTop<parallaxSectionTop && parallaxSectionMidlle<viewBottom && !alreadyDid){
+                alreadyDid = true;
+                $(digits).each((index, digit)=>{
+                    let count = 1;
+                    const Counter = setInterval(function(){
+                            if(count>=limits[index]){                    
+                                clearInterval(Counter)                        
+                            }                                        
+                            $(digit).text(count++)
+                    },time/limits[index])
+                })
+            }
+        }        
+        //#END of PARALLAX DIGIT counterup       
         
 
         // FEATURES FADEUP
-        let featuresSectionTop = $('#features').offset().top;
-        let featuresSectionMidlle = featuresSectionTop + $('#features').height()/2 
-        if(viewTop<featuresSectionTop && featuresSectionMidlle<viewBottom){
-            FadeIn(featuresItem, "up");
-        }
+        if($(".content-features").length>0){
+            let featuresSectionTop = $('#features').offset().top;
+            let featuresSectionMidlle = featuresSectionTop + $('#features').height()/2 
+            if(featuresSectionMidlle<viewBottom){
+                FadeIn($(".content-features"), "Y");
+            }
+        }        
         // END OF FEATURES FADEUP
 
 
-        //CLOUD SERVICES FADE-LEFT
-        let cloudservicesSectionTop = $('#cloud-services').offset().top;
-        let cloudservicesSectionMidlle = cloudservicesSectionTop + $('#cloud-services').height()/2 
-        if(viewTop<cloudservicesSectionTop && cloudservicesSectionMidlle<viewBottom){
-            FadeIn(cloudservicesPhoto, "left");
-        }
+        //CLOUD SERVICES FADE-LEFT        
+        if($('#cloud-services .content-photo img').length>0){
+            let cloudservicesSectionTop = $('#cloud-services').offset().top;
+            let cloudservicesSectionMidlle = cloudservicesSectionTop + $('#cloud-services').height()/2 
+            if(cloudservicesSectionMidlle<viewBottom){
+                FadeIn($('#cloud-services .content-photo img'), "X");
+            }
+        }       
         //END OF CLOUD SERVICES FADE-LEFT
 
         //DESIGN DEVELOPMENT FADE-LEFT
-        let designdevelopmentSectionTop = $('#design-development').offset().top;
-        let designdevelopmentSectionMidlle = designdevelopmentSectionTop + $('#design-development').height()/2 
-        if(viewTop<designdevelopmentSectionTop && designdevelopmentSectionMidlle<viewBottom){
-            FadeIn(designdevelopmentPhoto, "left");
-        }
+        if( $('#design-development .content-photo img').length>0){
+            let designdevelopmentSectionTop = $('#design-development').offset().top;
+            let designdevelopmentSectionMidlle = designdevelopmentSectionTop + $('#design-development').height()/2; 
+            if(designdevelopmentSectionMidlle<viewBottom){
+                FadeIn($('#design-development .content-photo img'), "X");
+            }
+        }        
         //END OF DESIGN DEVELOPMENT FADE-LEFT
-
-        let priceplanSectionTop = $('#price-plans').offset().top;
-        let priceplanSectionMidlle = priceplanSectionTop + $('#price-plans').height()/2 
-        if(viewTop<priceplanSectionTop && priceplanSectionMidlle<viewBottom){
-            FadeIn(priceplanItem, "up");
+        
+        //PRICE PLAN FADE-UP
+        if($('.content-price').length>0){            
+            let priceplanSectionTop = $('#price-plans').offset().top;
+            let priceplanSectionMidlle = priceplanSectionTop + $('#price-plans').height()/2;           
+            if(priceplanSectionMidlle<viewBottom){                
+                FadeIn($('.content-price'), "Y");                
+            }
         }
+       //END of PRICE PLAN FADE-UP
     })
     
     // SMOOTH SLIDE SECTIONS ON NAVBAR MENU
@@ -114,40 +117,42 @@ $(document).ready(function(){
     })
     //END of Trigger MENU in RESPONSIVE SIDE  
 
-
+    //ACCORDION MENU
+    var accordionButton = $('#faq .content-header');
+    var accordionMenu = $('#faq .content-text');   
+    // Opened menu when page is loaded
+    $('#faq .content-header').eq(1).addClass('active').next().slideDown('normal');
+    
+    // Click function for accordion buttons
+    accordionButton.click((e)=>{
+        e.preventDefault();
+       if(!$(e.currentTarget).hasClass("active")){        
+        accordionButton.removeClass('active');
+        accordionMenu.slideUp('normal');
+        $(e.currentTarget).next().stop(true,true).slideDown('normal');
+        $(e.currentTarget).addClass('active');        
+       }
+    });    
+    // END of ACCORDION MENU
+    
 function FadeIn(items, type){
     $.each(items, function(index){
         let time = [index+1]*0.4;
-        if(type=="up"){
+        if(type=="Y"){
             $(this).css({
-                "transform" : 'translateY(-50px)',
+                "transform" : 'translateY(0px)',
                 "transition" : 'all ' +  time + 's linear 0s',
                 "opacity" : '1'
           }) 
         }
-        else if(type=="left"){
+        else if(type=="X"){
             $(this).css({
-                "transform" : 'translateX(-50px)',
+                "transform" : 'translateX(0px)',
                 "transition" : 'all ' +  time + 's linear 0s',
                 "opacity" : '1'
           }) 
-        }
-        else if(type=="right"){
-            $(this).css({
-                "transform" : 'translateX(50px)',
-                "transition" : 'all ' +  time + 's linear 0s',
-                "opacity" : '1'
-          }) 
-        }
-        else{
-            if(type=="down"){
-                $(this).css({
-                    "transform" : 'translateY(50px)',
-                    "transition" : 'all ' +  time + 's linear 0s',
-                    "opacity" : '1'
-              }) 
-            }
-        }
+        }  
+
         }
         
     )};
