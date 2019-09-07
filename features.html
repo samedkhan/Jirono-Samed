@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="./assets/script/jquery.js"></script>
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            $('.preloader .spinner').delay(1800).fadeOut("slow", function () {
+                $(this).css('z-index', '0');
+                $('.preloader').addClass('complete').css("z-index", "0");
+            });
+
+        });
+    </script>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/grid.css">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -13,6 +22,13 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="spinner">
+            <div class="shadow"></div>
+            <div class="box"></div>
+        </div>
+
+    </div>
     <header>
         <section id="header">
             <div class="container">
@@ -93,117 +109,123 @@
                             </div>
                             <div class="text">
                                 <h5>Expanded image diff support</h5>
-                                <p>Sed a arcu a diam lobortis males uada eget in orci. Donec non dignissim lectus, aliquet.</p>
+                                <p>Sed a arcu a diam lobortis males uada eget in orci. Donec non dignissim lectus,
+                                    aliquet.</p>
                             </div>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="features-contain">
-                                <a href="#">
-                                    <div class="icon">
-                                        <img src="./assets/img/icons/2.png" alt="">
-                                    </div>
-                                    <div class="text">
-                                        <h5>Extensive editor integrations</h5>
-                                        <p>Aliquam fermentum orci eros, id lacinia arcu maximus condimentum. Proin sem sapien.</p>
-                                    </div>
-                                </a>
+                    <div class="features-contain">
+                        <a href="#">
+                            <div class="icon">
+                                <img src="./assets/img/icons/2.png" alt="">
                             </div>
+                            <div class="text">
+                                <h5>Extensive editor integrations</h5>
+                                <p>Aliquam fermentum orci eros, id lacinia arcu maximus condimentum. Proin sem sapien.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="features-contain">
-                                <a href="#">
-                                    <div class="icon">
-                                        <img src="./assets/img/icons/3.png" alt="">
-                                    </div>
-                                    <div class="text">
-                                        <h5>Community supported</h5>
-                                        <p>Nunc efficitur nisl elementum, tincidunt tellus at, dignissim libero. Nunc ut sem quam.</p>
-                                    </div>
-                                </a>
+                    <div class="features-contain">
+                        <a href="#">
+                            <div class="icon">
+                                <img src="./assets/img/icons/3.png" alt="">
                             </div>
+                            <div class="text">
+                                <h5>Community supported</h5>
+                                <p>Nunc efficitur nisl elementum, tincidunt tellus at, dignissim libero. Nunc ut sem
+                                    quam.</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="features-contain">
-                                <a href="#">
-                                    <div class="icon">
-                                        <img src="./assets/img/icons/4.png" alt="">
-                                    </div>
-                                    <div class="text">
-                                        <h5>Non-destructive editing</h5>
-                                        <p>Etiam congue id magna at auctor. Sed pellentesque ultricies nisi, ac finibus loremt.</p>
-                                    </div>
-                                </a>
+                    <div class="features-contain">
+                        <a href="#">
+                            <div class="icon">
+                                <img src="./assets/img/icons/4.png" alt="">
                             </div>
+                            <div class="text">
+                                <h5>Non-destructive editing</h5>
+                                <p>Etiam congue id magna at auctor. Sed pellentesque ultricies nisi, ac finibus loremt.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="features-contain">
-                                <a href="#">
-                                    <div class="icon">
-                                        <img src="./assets/img/icons/5.png" alt="">
-                                    </div>
-                                    <div class="text">
-                                        <h5>Vectorel shape editing</h5>
-                                        <p>Curabitur consequat purus auctor convallis dignissim. Duis eu tortor sed augue tempor.</p>
-                                    </div>
-                                </a>
+                    <div class="features-contain">
+                        <a href="#">
+                            <div class="icon">
+                                <img src="./assets/img/icons/5.png" alt="">
                             </div>
+                            <div class="text">
+                                <h5>Vectorel shape editing</h5>
+                                <p>Curabitur consequat purus auctor convallis dignissim. Duis eu tortor sed augue
+                                    tempor.</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="features-contain">
-                                <a href="#">
-                                    <div class="icon">
-                                        <img src="./assets/img/icons/6.png" alt="">
-                                    </div>
-                                    <div class="text">
-                                        <h5>Syntax highlighted diffs</h5>
-                                        <p>Maecenas purus nisi, vehi cula id vehicula vel, bibendum vitae risus. Nunc massa nulla.</p>
-                                    </div>
-                                </a>
+                    <div class="features-contain">
+                        <a href="#">
+                            <div class="icon">
+                                <img src="./assets/img/icons/6.png" alt="">
                             </div>
+                            <div class="text">
+                                <h5>Syntax highlighted diffs</h5>
+                                <p>Maecenas purus nisi, vehi cula id vehicula vel, bibendum vitae risus. Nunc massa
+                                    nulla.</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="parallax-digits">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                            <div class="content-parallax">
-                                <strong>0</strong>
-                                <span>Project
-                                    <br>
-                                    Complate</span>
-                            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="content-parallax">
+                            <strong>0</strong>
+                            <span>Project
+                                <br>
+                                Complate</span>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                            <div class="content-parallax">
-                                <strong>0</strong>
-                                <span>Happy
-                                    <br>
-                                    Customer</span>
-                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="content-parallax">
+                            <strong>0</strong>
+                            <span>Happy
+                                <br>
+                                Customer</span>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                            <div class="content-parallax">
-                                <strong>0</strong>
-                                <span>Experienced
-                                    <br>
-                                    Staff</span>
-                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="content-parallax">
+                            <strong>0</strong>
+                            <span>Experienced
+                                <br>
+                                Staff</span>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                            <div class="content-parallax">
-                                <strong>0</strong>
-                                <span>Ongoing
-                                    <br>
-                                    Project</span>
-                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="content-parallax">
+                            <strong>0</strong>
+                            <span>Ongoing
+                                <br>
+                                Project</span>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
         <section id="cloud-services">
             <div class="container">

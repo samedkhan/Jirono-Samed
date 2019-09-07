@@ -1,11 +1,11 @@
 .preloader{
     width:100%;
     height:100%;
-    z-index: 1000;
     left:0;
     top:0;
     position:fixed;
-    transition: 2s;
+    z-index: 1000;
+    transition: 1s ease-out;
     &::before{
         content: '';
         position: absolute;
@@ -13,7 +13,7 @@
         height: 100%;
         left:0;
         background-color: $c-blue;
-        transition: 2s;
+        transition: 1s ease-out;
     }
     &::after{
         content: '';
@@ -22,9 +22,10 @@
         height: 100%;
         right:0;
         background-color: $c-blue;
-        transition: 2s;
+        transition: 1s ease-out;
     }
     .spinner{
+        z-index: 1001;
         position: absolute;
         top: calc(50% - 20px);
         left: calc(50% - 20px);
@@ -37,20 +38,40 @@
         top: 59px;
         left: 0;
         border-radius: 50%;
-        animation: shadow .5s linear infinite;
+        transform: scaleX(1.1);
+        animation: shadow 0.8s linear infinite;
         }
         .box{
-            width: 50px;
+        width: 50px;
         height: 50px;
         background: #fff;
-        animation: animate .5s linear infinite;
         position: absolute;
         top: 0;
         left: 0;
-        border-radius: 3px;
-        }
-    }
+        border-radius: 3px;  
+        animation: box 0.8s linear infinite;
         
+        }
+    }        
+}
+@keyframes shadow{
+    50%{
+        transform: scale(1.4);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes box {
+    50%{
+        transform: rotate(45deg) translateY(7px) translateX(7px);
+        border-bottom-right-radius: 20px;
+    }
+    100%{
+        transform: rotate(90deg) translateY(0px) translateX(0px);
+        border-bottom-left-radius: 0px;
+    }
+
 }
 .complete{
     &::before{

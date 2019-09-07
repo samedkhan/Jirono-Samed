@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="./assets/script/jquery.js"></script>
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            $('.preloader .spinner').delay(1800).fadeOut("slow", function () {
+                $(this).css('z-index', '0');
+                $('.preloader').addClass('complete').css("z-index", "0");
+            });
+
+        });
+    </script>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/grid.css">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -13,196 +22,204 @@
 </head>
 
 <body>
-    <header>
-        <section id="header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-12">
-                        <div class="navigation-bar">
-                            <div class="logo">
-                                <img src="./assets/img/logo-blue.png" alt="logo_blue">
-                            </div>
-                            <div class="menu">
-                                <ul>
-                                    <li class="main-menu"><a href="./index.html">Home</a></li>
-                                    <li class="main-menu" data-submenu="true"><a href="#">Discover</a>
-                                        <ul class="submenu">
-                                            <li><a href="#features">Features</a></li>
-                                            <li><a href="#team">Our Team</a></li>
-                                            <li><a href="#price-plans">Pricing Plans</a></li>
-                                            <li><a href="#blog">Latests Blogs</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="main-menu" data-submenu="true"><a href="#">Pages</a>
-                                        <ul class="submenu">
-                                            <li><a href="./about.html">About US</a></li>
-                                            <li><a href="./features.html">Features</a></li>
-                                            <li><a href="./FAQ.html">FAQ's</a></li>
-                                            <li><a href="./blog.html">Blog</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="main-menu"><a href="./contact.html">Contact</a></li>
-                                </ul>
+    <div class="preloader">
+        <div class="spinner">
+            <div class="shadow"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+        <header>
+            <section id="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-12">
+                            <div class="navigation-bar">
+                                <div class="logo">
+                                    <img src="./assets/img/logo-blue.png" alt="logo_blue">
+                                </div>
+                                <div class="menu">
+                                    <ul>
+                                        <li class="main-menu"><a href="./index.html">Home</a></li>
+                                        <li class="main-menu" data-submenu="true"><a href="#">Discover</a>
+                                            <ul class="submenu">
+                                                <li><a href="#features">Features</a></li>
+                                                <li><a href="#team">Our Team</a></li>
+                                                <li><a href="#price-plans">Pricing Plans</a></li>
+                                                <li><a href="#blog">Latests Blogs</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="main-menu" data-submenu="true"><a href="#">Pages</a>
+                                            <ul class="submenu">
+                                                <li><a href="./about.html">About US</a></li>
+                                                <li><a href="./features.html">Features</a></li>
+                                                <li><a href="./FAQ.html">FAQ's</a></li>
+                                                <li><a href="./blog.html">Blog</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="main-menu"><a href="./contact.html">Contact</a></li>
+                                    </ul>
 
-                            </div>
-                            <div class="trigger">
-                                <div class="top"></div>
-                                <div class="middle"></div>
-                                <div class="bottom"></div>
-                            </div>
-                            <div class="registration">
-                                <ul>
-                                    <li><a href="#" class="button">SIGN IN</a></li>
-                                    <li><a href="#" class="button" data-checked="true">SIGN UP</a></li>
-                                </ul>
+                                </div>
+                                <div class="trigger">
+                                    <div class="top"></div>
+                                    <div class="middle"></div>
+                                    <div class="bottom"></div>
+                                </div>
+                                <div class="registration">
+                                    <ul>
+                                        <li><a href="#" class="button">SIGN IN</a></li>
+                                        <li><a href="#" class="button" data-checked="true">SIGN UP</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </header>
-    <main>
-        <section id="parallax-aboutUs">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="content-aboutUs">
-                            <div class="content-header">
-                                <h1>Blog</h1>
-                            </div>
-                            <div class="links">
-                                <ul>
-                                    <li><a href="./index.html">Home</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                </ul>
+            </section>
+        </header>
+        <main>
+            <section id="parallax-aboutUs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="content-aboutUs">
+                                <div class="content-header">
+                                    <h1>Blog</h1>
+                                </div>
+                                <div class="links">
+                                    <ul>
+                                        <li><a href="./index.html">Home</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="blogpage">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="content-blog-main">
-                            <div class="photo">
-                                <img src="./assets/img/1 (1).jpg" alt="">
-                                <span class="time">APR 09</span>
-                            </div>
-                            <div class="name">
-                                <div class="about">
-                                    <a href="#" class="fi flaticon-man-user"> by Jirono</a>
-                                    <a href="#" class="fi flaticon-reply"> 3 Comments</a>
+            <section id="blogpage">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="content-blog-main">
+                                <div class="photo">
+                                    <img src="./assets/img/1 (1).jpg" alt="">
+                                    <span class="time">APR 09</span>
                                 </div>
-                                <h3>Jirono Expands the Leadership Team with David Lin, Controller</h3>
+                                <div class="name">
+                                    <div class="about">
+                                        <a href="#" class="fi flaticon-man-user"> by Jirono</a>
+                                        <a href="#" class="fi flaticon-reply"> 3 Comments</a>
+                                    </div>
+                                    <h3>Jirono Expands the Leadership Team with David Lin, Controller</h3>
+                                </div>
+                                <div class="text">
+                                    <p>Mauris tellus sem, ultrices varius nisl at, convallis iaculis mauris. Sed eget
+                                        sem
+                                        vitae purus tempus dignissim. Quisque euismod nec lacus sit amet maximus. Ut
+                                        convallis sagittis lorem auctor malesuada. Morbi auctor tortor eu risus
+                                        condimentum.
+                                    </p>
+                                </div>
+                                <a href="./blog-single.html" class="button" data-checked="true">READ MORE</a>
                             </div>
-                            <div class="text">
-                                <p>Mauris tellus sem, ultrices varius nisl at, convallis iaculis mauris. Sed eget sem
-                                    vitae purus tempus dignissim. Quisque euismod nec lacus sit amet maximus. Ut
-                                    convallis sagittis lorem auctor malesuada. Morbi auctor tortor eu risus condimentum.
-                                </p>
+
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="content-blog-item">
+                                        <div class="photo">
+                                            <img src="./assets/img/3.jpg" alt="">
+                                            <span class="time">APR 09</span>
+                                        </div>
+                                        <div class="name">
+                                            <div class="about">
+                                                <a href="#" class="fi flaticon-man-user"> by Jirono</a>
+                                                <a href="#" class="fi flaticon-reply"> 3 Comments</a>
+                                            </div>
+                                            <h3>Jirono Partners with Velocloud to Deliver Managed SD-WAN</h3>
+                                        </div>
+                                        <div class="text">
+                                            <p>Cras imperdiet faucibus sem, a dignissim urna feugiat sed. Interdum et
+                                                malesuada fames ac ante ipsum.</p>
+                                        </div>
+                                        <a href="./blog-single.html" class="button" data-checked="true">READ MORE</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="content-blog-item">
+                                        <div class="photo">
+                                            <img src="./assets/img/2.jpg" alt="">
+                                            <span class="time">APR 09</span>
+                                        </div>
+                                        <div class="name">
+                                            <div class="about">
+                                                <a href="#" class="fi flaticon-man-user"> by Jirono</a>
+                                                <a href="#" class="fi flaticon-reply"> 3 Comments</a>
+                                            </div>
+                                            <h3>Corporate IT Solutions Adds Neva Senior Account Executive</h3>
+                                        </div>
+                                        <div class="text">
+                                            <p>Quisque euismod nec lacus sit amet maximus. Ut convallis sagittis lorem
+                                                auctor malesuada. Morbi auctor.</p>
+                                        </div>
+                                        <a href="./blog-single.html" class="button" data-checked="true">READ MORE</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="content-blog-item">
+                                        <div class="photo">
+                                            <img src="./assets/img/4.jpg" alt="">
+                                            <span class="time">APR 09</span>
+                                        </div>
+                                        <div class="name">
+                                            <div class="about">
+                                                <a href="#" class="fi flaticon-man-user"> by Jirono</a>
+                                                <a href="#" class="fi flaticon-reply"> 3 Comments</a>
+                                            </div>
+                                            <h3>Jirono Expands the Leadership Team with David Lin, Controller</h3>
+                                        </div>
+                                        <div class="text">
+                                            <p>Cras imperdiet faucibus sem, a dignissim urna feugiat sed. Interdum et
+                                                malesuada fames ac ante ipsum.</p>
+                                        </div>
+                                        <a href="./blog-single.html" class="button" data-checked="true">READ MORE</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="content-blog-item">
+                                        <div class="photo">
+                                            <img src="./assets/img/1.jpg" alt="">
+                                            <span class="time">APR 09</span>
+                                        </div>
+                                        <div class="name">
+                                            <div class="about">
+                                                <a href="#" class="fi flaticon-man-user"> by Jirono</a>
+                                                <a href="#" class="fi flaticon-reply"> 3 Comments</a>
+                                            </div>
+                                            <h3>Jirono Partners with Velocloud to Deliver Managed SD-WAN</h3>
+                                        </div>
+                                        <div class="text">
+                                            <p>Quisque euismod nec lacus sit amet maximus. Ut convallis sagittis lorem
+                                                auctor malesuada. Morbi auctor.</p>
+                                        </div>
+                                        <a href="./blog-single.html" class="button" data-checked="true">READ MORE</a>
+                                    </div>
+                                </div>
                             </div>
-                            <a href="./blog-single.html" class="button" data-checked="true">READ MORE</a>
+
                         </div>
-
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                                <div class="content-blog-item">
-                                    <div class="photo">
-                                        <img src="./assets/img/3.jpg" alt="">
-                                        <span class="time">APR 09</span>
-                                    </div>
-                                    <div class="name">
-                                        <div class="about">
-                                            <a href="#" class="fi flaticon-man-user"> by Jirono</a>
-                                            <a href="#" class="fi flaticon-reply"> 3 Comments</a>
-                                        </div>
-                                        <h3>Jirono Partners with Velocloud to Deliver Managed SD-WAN</h3>
-                                    </div>
-                                    <div class="text">
-                                        <p>Cras imperdiet faucibus sem, a dignissim urna feugiat sed. Interdum et
-                                            malesuada fames ac ante ipsum.</p>
-                                    </div>
-                                    <a href="./blog-single.html" class="button" data-checked="true">READ MORE</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                                <div class="content-blog-item">
-                                    <div class="photo">
-                                        <img src="./assets/img/2.jpg" alt="">
-                                        <span class="time">APR 09</span>
-                                    </div>
-                                    <div class="name">
-                                        <div class="about">
-                                            <a href="#" class="fi flaticon-man-user"> by Jirono</a>
-                                            <a href="#" class="fi flaticon-reply"> 3 Comments</a>
-                                        </div>
-                                        <h3>Corporate IT Solutions Adds Neva Senior Account Executive</h3>
-                                    </div>
-                                    <div class="text">
-                                        <p>Quisque euismod nec lacus sit amet maximus. Ut convallis sagittis lorem
-                                            auctor malesuada. Morbi auctor.</p>
-                                    </div>
-                                    <a href="./blog-single.html" class="button" data-checked="true">READ MORE</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                                <div class="content-blog-item">
-                                    <div class="photo">
-                                        <img src="./assets/img/4.jpg" alt="">
-                                        <span class="time">APR 09</span>
-                                    </div>
-                                    <div class="name">
-                                        <div class="about">
-                                            <a href="#" class="fi flaticon-man-user"> by Jirono</a>
-                                            <a href="#" class="fi flaticon-reply"> 3 Comments</a>
-                                        </div>
-                                        <h3>Jirono Expands the Leadership Team with David Lin, Controller</h3>
-                                    </div>
-                                    <div class="text">
-                                        <p>Cras imperdiet faucibus sem, a dignissim urna feugiat sed. Interdum et
-                                            malesuada fames ac ante ipsum.</p>
-                                    </div>
-                                    <a href="./blog-single.html" class="button" data-checked="true">READ MORE</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                                <div class="content-blog-item">
-                                    <div class="photo">
-                                        <img src="./assets/img/1.jpg" alt="">
-                                        <span class="time">APR 09</span>
-                                    </div>
-                                    <div class="name">
-                                        <div class="about">
-                                            <a href="#" class="fi flaticon-man-user"> by Jirono</a>
-                                            <a href="#" class="fi flaticon-reply"> 3 Comments</a>
-                                        </div>
-                                        <h3>Jirono Partners with Velocloud to Deliver Managed SD-WAN</h3>
-                                    </div>
-                                    <div class="text">
-                                        <p>Quisque euismod nec lacus sit amet maximus. Ut convallis sagittis lorem
-                                            auctor malesuada. Morbi auctor.</p>
-                                    </div>
-                                    <a href="./blog-single.html" class="button" data-checked="true">READ MORE</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-4">
-                       <div class="col-lg-12">
-                            <div class="sidebar">
+                        <div class="col-lg-4">
+                            <div class="col-lg-12">
+                                <div class="sidebar">
                                     <div class="search">
                                         <form>
                                             <input type="text" placeholder="Search">
                                             <button type="submit"><span class="fi flaticon-magnifier"></span></button>
                                         </form>
-        
+
                                     </div>
-        
+
                                     <div class="blog-types">
                                         <ul>
                                             <li><a href="#">Cloud PMS</a><span>23</span></li>
@@ -214,7 +231,7 @@
                                             <li><a href="#">Mobile Future</a><span>76</span></li>
                                         </ul>
                                     </div>
-        
+
                                     <div class="blog-buttons">
                                         <a href="#">Team</a>
                                         <a href="#">Hotel</a>
@@ -230,124 +247,127 @@
                                         <a href="#">Coding</a>
                                         <a href="#">Database</a>
                                     </div>
-        
+
                                     <div class="contact-us">
-                                        
+
                                         <div class="content">
-                                                <h5>You can contact us for purchase, installation and customizations.</h5>
-                                                <a href="#" class="button" data-checked="true">CONTACT US</a>
+                                            <h5>You can contact us for purchase, installation and customizations.</h5>
+                                            <a href="#" class="button" data-checked="true">CONTACT US</a>
                                         </div>
                                     </div>
                                 </div>
-                       </div>
+                            </div>
+
+                        </div>
 
                     </div>
 
                 </div>
-
-            </div>
-        </section>
+            </section>
 
 
-    </main>
-    <footer>
-        <section id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-md-12 col-sm-12 col-12">
-                        <div class="footer-item">
-                            <div class="item-header">
-                                <img src="./assets/img/logo-white.png" alt="logo">
+        </main>
+        <footer>
+            <section id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                            <div class="footer-item">
+                                <div class="item-header">
+                                    <img src="./assets/img/logo-white.png" alt="logo">
+                                </div>
+                                <div class="item-contain">
+                                    <p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a
+                                        feugiat
+                                        eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus
+                                        semper.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="item-contain">
-                                <p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat
-                                    eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.
-                                </p>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="footer-item">
+                                <div class="item-header">
+                                    <h5>Helpful Links</h5>
+                                </div>
+                                <div class="item-contain">
+                                    <ul>
+                                        <li><a href="./about.html"><i
+                                                    class="fi flaticon-angle-arrow-pointing-to-right"></i><span>About
+                                                    Us</span></a></li>
+                                        <li><a href="./features.html"><i
+                                                    class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Features</span></a>
+                                        </li>
+                                        <li><a href="./FAQ.html"><i
+                                                    class="fi flaticon-angle-arrow-pointing-to-right"></i><span>FAQ's</span></a>
+                                        </li>
+                                        <li><a href="./blog.html"><i
+                                                    class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Blog</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
+
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="footer-item">
+                                <div class="item-header">
+                                    <h5>Support</h5>
+                                </div>
+                                <div class="item-contain">
+                                    <ul>
+                                        <li><a href="#"><i
+                                                    class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Privacy
+                                                    Policy</span></a></li>
+                                        <li><a href="#"><i
+                                                    class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Terms
+                                                    of Use</span></a></li>
+                                        <li><a href="#"><i
+                                                    class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Support
+                                                    Center</span></a></li>
+                                        <li><a href="./contact.html"><i
+                                                    class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Contact</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 col-12">
+                            <div class="footer-item">
+                                <div class="item-header">
+                                    <h5>Contact Us</h5>
+                                </div>
+                                <div class="item-contain">
+                                    <ul>
+                                        <li><span>455 West Orchard Street
+                                                Kings Mountain, NC 28086</span></li>
+                                        <li><span>Phone: (272) 211-7370</span></li>
+                                        <li><span>E-Mail:support@yourbrand.com</span></li>
+                                        <li>
+                                            <ul class="footer-social">
+                                                <li><a href="#"><i class="fi flaticon-facebook-logo"></i></a></li>
+                                                <li><a href="#"><i class="fi flaticon-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fi flaticon-linkedin"></i></a></li>
+                                                <li><a href="#"><i class="fi flaticon-google-plus"></i></a></li>
+                                                <li><a href="#"><i class="fi flaticon-github-logo"></i></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
-                        <div class="footer-item">
-                            <div class="item-header">
-                                <h5>Helpful Links</h5>
-                            </div>
-                            <div class="item-contain">
-                                <ul>
-                                    <li><a href="./about.html"><i
-                                                class="fi flaticon-angle-arrow-pointing-to-right"></i><span>About
-                                                Us</span></a></li>
-                                    <li><a href="./features.html"><i
-                                                class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Features</span></a>
-                                    </li>
-                                    <li><a href="./FAQ.html"><i
-                                                class="fi flaticon-angle-arrow-pointing-to-right"></i><span>FAQ's</span></a>
-                                    </li>
-                                    <li><a href="./blog.html"><i
-                                                class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Blog</span></a>
-                                    </li>
-                                </ul>
-                            </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="copyright">© 2019 Jirono. All Rights Reserved.</p>
                         </div>
-
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
-                        <div class="footer-item">
-                            <div class="item-header">
-                                <h5>Support</h5>
-                            </div>
-                            <div class="item-contain">
-                                <ul>
-                                    <li><a href="#"><i
-                                                class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Privacy
-                                                Policy</span></a></li>
-                                    <li><a href="#"><i class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Terms
-                                                of Use</span></a></li>
-                                    <li><a href="#"><i
-                                                class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Support
-                                                Center</span></a></li>
-                                    <li><a href="./contact.html"><i
-                                                class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Contact</span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12 col-12">
-                        <div class="footer-item">
-                            <div class="item-header">
-                                <h5>Contact Us</h5>
-                            </div>
-                            <div class="item-contain">
-                                <ul>
-                                    <li><span>455 West Orchard Street
-                                            Kings Mountain, NC 28086</span></li>
-                                    <li><span>Phone: (272) 211-7370</span></li>
-                                    <li><span>E-Mail:support@yourbrand.com</span></li>
-                                    <li>
-                                        <ul class="footer-social">
-                                            <li><a href="#"><i class="fi flaticon-facebook-logo"></i></a></li>
-                                            <li><a href="#"><i class="fi flaticon-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fi flaticon-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fi flaticon-google-plus"></i></a></li>
-                                            <li><a href="#"><i class="fi flaticon-github-logo"></i></a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p class="copyright">© 2019 Jirono. All Rights Reserved.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </footer>
-    <script src="./assets/script/main.js"></script>
+            </section>
+        </footer>
+        <script src="./assets/script/main.js"></script>
 </body>
 
 </html>

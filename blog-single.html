@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="./assets/script/jquery.js"></script>
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            $('.preloader .spinner').delay(1800).fadeOut("slow", function () {
+                $(this).css('z-index', '0');
+                $('.preloader').addClass('complete').css("z-index", "0");
+            });
+
+        });
+    </script>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/grid.css">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -13,416 +22,156 @@
 </head>
 
 <body>
-    <header>
-        <section id="header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-12">
-                        <div class="navigation-bar">
-                            <div class="logo">
-                                <img src="./assets/img/logo-blue.png" alt="logo_blue">
-                            </div>
-                            <div class="menu">
-                                <ul>
-                                    <li class="main-menu"><a href="./index.html">Home</a></li>
-                                    <li class="main-menu" data-submenu="true"><a href="#">Discover</a>
-                                        <ul class="submenu">
-                                            <li><a href="#features">Features</a></li>
-                                            <li><a href="#team">Our Team</a></li>
-                                            <li><a href="#price-plans">Pricing Plans</a></li>
-                                            <li><a href="#blog">Latests Blogs</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="main-menu" data-submenu="true"><a href="#">Pages</a>
-                                        <ul class="submenu">
-                                            <li><a href="./about.html">About US</a></li>
-                                            <li><a href="./features.html">Features</a></li>
-                                            <li><a href="./FAQ.html">FAQ's</a></li>
-                                            <li><a href="./blog.html">Blog</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="main-menu"><a href="./contact.html">Contact</a></li>
-                                </ul>
-
-                            </div>
-                            <div class="trigger">
-                                <div class="top"></div>
-                                <div class="middle"></div>
-                                <div class="bottom"></div>
-                            </div>
-                            <div class="registration">
-                                <ul>
-                                    <li><a href="#" class="button">SIGN IN</a></li>
-                                    <li><a href="#" class="button" data-checked="true">SIGN UP</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </header>
-    <main>
-        <section id="parallax-aboutUs">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="content-aboutUs">
-                            <div class="content-header">
-                                <h1>Our Partners with Velocloud to Deliver Managed SD</h1>
-                            </div>
-                            <div class="links">
-                                <ul>
-                                    <li><a href="./index.html">Home</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="blogsinglepage">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-
-                        <div class="col-lg-12">
-                                <div class="content-blog-main">
-                                        <div class="photo">
-                                            <img src="./assets/img/1 (1).jpg" alt="">
-                                            <span class="time">APR 09</span>
-                                        </div>
-                                        <div class="name">
-                                            <div class="about">
-                                                <a href="#" class="fi flaticon-man-user"> by Jirono</a>
-                                                <a href="#" class="fi flaticon-reply"> 3 Comments</a>
-                                            </div>
-                                            
-                                        </div>
-                                        <div class="text">
-                                            <p>Mauris tellus sem, ultrices varius nisl at, convallis iaculis mauris. Sed eget sem
-                                                vitae purus tempus dignissim. Quisque euismod nec lacus sit amet maximus. Ut
-                                                convallis sagittis lorem auctor malesuada. Morbi auctor tortor eu risus condimentum.
-                                            </p>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-4 col-md-4 col-sm-4 col-12">
-                                                <div class="mini-photo">
-                                                    <img src="./assets/img/1 (1).jpg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-4 col-sm-4 col-12">
-                                                    <div class="mini-photo">
-                                                            <img src="./assets/img/3.jpg" alt="">
-                                                        </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-4 col-sm-4 col-12">
-                                                    <div class="mini-photo">
-                                                            <img src="./assets/img/2.jpg" alt="">
-                                                        </div>
-                                            </div>
-                                        </div>
-                                        <div class="text">
-                                                <p>Quisque bibendum mi quis consequat ultricies. Donec quis pharetra nisi, a congue justo. Aliquam erat volutpat. Nunc id lacus egestas, accumsan lorem eu, rhoncus velit. Duis dapibus varius mauris, ut rutrum leo vulputate a. Praesent ac fringilla turpis. Donec rhoncus eget enim sit amet euismod. Pellentesque pellentesque malesuada lobortis. Quisque et dictum nulla. Sed eu ante at massa imperdiet ultricies. Vivamus vulputate faucibus lorem, eget efficitur purus dictum nec.
-                                                </p>
-                                        </div>
-                                        <blockquote>
-                                            <div class="text">
-                                               <p> Aliquam ullamcorper malesuada dapibus. Curabitur ac lectus sit amet dui euismod auctor. Suspendisse sagittis id lacus eget vulputate. Ut nec arcu ut sem molestie tincidunt luctus eget tellus. Etiam consectetur, eros eu laoreet sagittis.</p>
-                                            </div>
-                                            <div class="author">
-                                                <h5>Parsley Montana</h5>
-                                            </div>
-                                        </blockquote>
-            
-                                        <div class="text">
-                                                <p>Suspendisse condimentum, eros ac pulvinar iaculis, augue odio vehicula leo, vitae dictum nibh quam rhoncus risus. Nam tristique tellus et convallis faucibus. Cras in lacus at odio tristique tempor vel quis sem. Sed id lorem sit amet turpis mattis tempor.
-                                                </p>
-                                        </div>
-                                        <div class="post-footer">
-                                            <span>Share -</span>
-                                            <ul class="footer-social">
-                                                    <li><a href="#"><i class="fi flaticon-facebook-logo"></i></a></li>
-                                                    <li><a href="#"><i class="fi flaticon-twitter"></i></a></li>
-                                                    <li><a href="#"><i class="fi flaticon-linkedin"></i></a></li>
-                                                    <li><a href="#"><i class="fi flaticon-google-plus"></i></a></li>
-                                                    <li><a href="#"><i class="fi flaticon-github-logo"></i></a></li>
-                                                </ul>
-            
-                                        </div>
-                                    </div>
-                        </div>
-
-                        
-                        <div class="col-lg-12">
-                                <div class="content-blog-comments">
-                                        <div class="blog-header">
-                                            <h5>Comments (3)</h5>
-                                        </div> 
-                                      <ul class="comment-content-list">
-                                          <li>
-                                              <div class="icon">
-                                                  <i class="fi flaticon-man-user"></i>
-                                              </div>
-                                              <div class="comment-content">
-                                      
-                                                  <div class="name-time">
-                                                      <div class="name">
-                                                          <h5>Hans Down</h5>
-                                                          <span>09 APR 2018</span>
-                                                      </div>
-                                                      <div class="reply">
-                                                          <a href="#"><i class="fi flaticon-reply"></i>Reply</a>
-                                                      </div>
-                                      
-                                                  </div>                    
-                                      
-                                      
-                                                  <div class="comment-text">
-                                                      <p>
-                                                          Praesent ut fringilla ligula. Vivamus et lacus nec risus malesuada vestibulum. Phasellus lobortis
-                                                          viverra lobortis. Donec iaculis, erat eu bibendum faucibus.
-                                                      </p>
-                                                  </div>
-                                              </div>
-                                      
-                                          </li>
-                                          <li>
-                                              <div class="icon">
-                                                  <i class="fi flaticon-man-user"></i>
-                                              </div>
-                                              <div class="comment-content">
-                                      
-                                                  <div class="name-time">
-                                                      <div class="name">
-                                                          <h5>Penny Tool</h5>
-                                                          <span>09 APR 2018</span>
-                                                      </div>
-                                                      <div class="reply">
-                                                          <a href="#"><i class="fi flaticon-reply"></i>Reply</a>
-                                                      </div>
-                                      
-                                                  </div>
-                                      
-                                      
-                                      
-                                                  <div class="comment-text">
-                                                      <p>
-                                                          Praesent ut fringilla ligula. Vivamus et lacus nec risus malesuada vestibulum. Phasellus lobortis
-                                                          viverra lobortis. Donec iaculis, erat eu bibendum faucibus.
-                                                      </p>
-                                                  </div>
-                                              </div>
-                                      
-                                              <ul>
-                                                  <li>
-                                                      <div class="icon">
-                                                          <i class="fi flaticon-man-user"></i>
-                                                      </div>
-                                                      <div class="comment-content">
-                                      
-                                                          <div class="name-time">
-                                                              <div class="name">
-                                                                  <h5>Eric Widget</h5>
-                                                                  <span>09 APR 2018</span>
-                                                              </div>
-                                                              <div class="reply">
-                                                                  <a href="#"><i class="fi flaticon-reply"></i>Reply</a>
-                                                              </div>
-                                      
-                                                          </div>
-                                      
-                                      
-                                      
-                                                          <div class="comment-text">
-                                                              <p>
-                                                                  Praesent ut fringilla ligula. Vivamus et lacus nec risus malesuada vestibulum. Phasellus
-                                                                  lobortis viverra lobortis. Donec iaculis, erat eu bibendum faucibus.
-                                                              </p>
-                                                          </div>
-                                                      </div>
-                                                  </li>
-                                              </ul>
-                                          </li>
-                                      </ul>
-                                      </div>
-                        </div>
-                        
-                        <div class="col-lg-12">
-                                <div class="postcomment">
-                                        <div class="blog-header">
-                                                <h5>Post a Comment</h5>
-                                            </div> 
-
-                                            <div class="postform">
-                                                <form action="#">
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                                                            <div class="form-item">
-                                                                    <label for="name">NAME</label>
-                                                                    <input type="text" id="name">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                                                               <div class="form-item">
-                                                                    <label for="email">EMAIL</label>
-                                                                    <input type="email" id="email">
-                                                               </div>
-                                                            </div>
-                                                            <div class="col-lg-12">
-                                                                    <div class="form-item">
-                                                                            <label for="text">COMMENT:</label>
-                                                                            <textarea id="text" cols="30" rows="10"></textarea>
-                                                                       </div>
-                                                            </div>
-                                                            <div class="col-lg-12">
-                                                                <div class="form-item">
-                                                                    <button type="submit" data-checked="true">SUBMIT COMMENT</button>
-                                                                </div>
-                                                            </div>
-                                                    </div>
-                                                </form>
-                                            </div>
+    <div class="preloader">
+        <div class="spinner">
+            <div class="shadow"></div>
+            <div class="box"></div>
+        </div>
+        </div>
+        <header>
+            <section id="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-12">
+                            <div class="navigation-bar">
+                                <div class="logo">
+                                    <img src="./assets/img/logo-blue.png" alt="logo_blue">
                                 </div>
-                        </div>
-                      
-
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="col-lg-12">
-                                <div class="sidebar">
-                                        <div class="search">
-                                            <form>
-                                                <input type="text" placeholder="Search">
-                                                <button type="submit"><span class="fi flaticon-magnifier"></span></button>
-                                            </form>
-            
-                                        </div>
-            
-                                        <div class="blog-types">
-                                            <ul>
-                                                <li><a href="#">Cloud PMS</a><span>23</span></li>
-                                                <li><a href="#">Desktop PMS</a><span>12</span></li>
-                                                <li><a href="#">Hotel Software</a><span>153</span></li>
-                                                <li><a href="#">Social Media</a><span>9</span></li>
-                                                <li><a href="#">General</a><span>95</span></li>
-                                                <li><a href="#">Marketing</a><span>32</span></li>
-                                                <li><a href="#">Mobile Future</a><span>76</span></li>
+                                <div class="menu">
+                                    <ul>
+                                        <li class="main-menu"><a href="./index.html">Home</a></li>
+                                        <li class="main-menu" data-submenu="true"><a href="#">Discover</a>
+                                            <ul class="submenu">
+                                                <li><a href="#features">Features</a></li>
+                                                <li><a href="#team">Our Team</a></li>
+                                                <li><a href="#price-plans">Pricing Plans</a></li>
+                                                <li><a href="#blog">Latests Blogs</a></li>
                                             </ul>
+                                        </li>
+                                        <li class="main-menu" data-submenu="true"><a href="#">Pages</a>
+                                            <ul class="submenu">
+                                                <li><a href="./about.html">About US</a></li>
+                                                <li><a href="./features.html">Features</a></li>
+                                                <li><a href="./FAQ.html">FAQ's</a></li>
+                                                <li><a href="./blog.html">Blog</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="main-menu"><a href="./contact.html">Contact</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="trigger">
+                                    <div class="top"></div>
+                                    <div class="middle"></div>
+                                    <div class="bottom"></div>
+                                </div>
+                                <div class="registration">
+                                    <ul>
+                                        <li><a href="#" class="button">SIGN IN</a></li>
+                                        <li><a href="#" class="button" data-checked="true">SIGN UP</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section id="parallax-aboutUs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="content-aboutUs">
+                                <div class="content-header">
+                                    <h1>Our Partners with Velocloud to Deliver Managed SD</h1>
+                                </div>
+                                <div class="links">
+                                    <ul>
+                                        <li><a href="./index.html">Home</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="blogsinglepage">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+
+                            <div class="col-lg-12">
+                                <div class="content-blog-main">
+                                    <div class="photo">
+                                        <img src="./assets/img/1 (1).jpg" alt="">
+                                        <span class="time">APR 09</span>
+                                    </div>
+                                    <div class="name">
+                                        <div class="about">
+                                            <a href="#" class="fi flaticon-man-user"> by Jirono</a>
+                                            <a href="#" class="fi flaticon-reply"> 3 Comments</a>
                                         </div>
-            
-                                        <div class="blog-buttons">
-                                            <a href="#">Team</a>
-                                            <a href="#">Hotel</a>
-                                            <a href="#">Android</a>
-                                            <a href="#">App</a>
-                                            <a href="#">Software</a>
-                                            <a href="#">Development</a>
-                                            <a href="#">API</a>
-                                            <a href="#">Store</a>
-                                            <a href="#">Reservation</a>
-                                            <a href="#">Analytics</a>
-                                            <a href="#">Support</a>
-                                            <a href="#">Coding</a>
-                                            <a href="#">Database</a>
+
+                                    </div>
+                                    <div class="text">
+                                        <p>Mauris tellus sem, ultrices varius nisl at, convallis iaculis mauris. Sed
+                                            eget sem
+                                            vitae purus tempus dignissim. Quisque euismod nec lacus sit amet maximus. Ut
+                                            convallis sagittis lorem auctor malesuada. Morbi auctor tortor eu risus
+                                            condimentum.
+                                        </p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+                                            <div class="mini-photo">
+                                                <img src="./assets/img/1 (1).jpg" alt="">
+                                            </div>
                                         </div>
-            
-                                        <div class="contact-us">
-                                            
-                                            <div class="content">
-                                                    <h5>You can contact us for purchase, installation and customizations.</h5>
-                                                    <a href="#" class="button" data-checked="true">CONTACT US</a>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+                                            <div class="mini-photo">
+                                                <img src="./assets/img/3.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+                                            <div class="mini-photo">
+                                                <img src="./assets/img/2.jpg" alt="">
                                             </div>
                                         </div>
                                     </div>
-                        </div>
+                                    <div class="text">
+                                        <p>Quisque bibendum mi quis consequat ultricies. Donec quis pharetra nisi, a
+                                            congue justo. Aliquam erat volutpat. Nunc id lacus egestas, accumsan lorem
+                                            eu, rhoncus velit. Duis dapibus varius mauris, ut rutrum leo vulputate a.
+                                            Praesent ac fringilla turpis. Donec rhoncus eget enim sit amet euismod.
+                                            Pellentesque pellentesque malesuada lobortis. Quisque et dictum nulla. Sed
+                                            eu ante at massa imperdiet ultricies. Vivamus vulputate faucibus lorem, eget
+                                            efficitur purus dictum nec.
+                                        </p>
+                                    </div>
+                                    <blockquote>
+                                        <div class="text">
+                                            <p> Aliquam ullamcorper malesuada dapibus. Curabitur ac lectus sit amet dui
+                                                euismod auctor. Suspendisse sagittis id lacus eget vulputate. Ut nec
+                                                arcu ut sem molestie tincidunt luctus eget tellus. Etiam consectetur,
+                                                eros eu laoreet sagittis.</p>
+                                        </div>
+                                        <div class="author">
+                                            <h5>Parsley Montana</h5>
+                                        </div>
+                                    </blockquote>
 
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-
-    </main>
-    <footer>
-        <section id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-md-12 col-sm-12 col-12">
-                        <div class="footer-item">
-                            <div class="item-header">
-                                <img src="./assets/img/logo-white.png" alt="logo">
-                            </div>
-                            <div class="item-contain">
-                                <p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat
-                                    eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
-                        <div class="footer-item">
-                            <div class="item-header">
-                                <h5>Helpful Links</h5>
-                            </div>
-                            <div class="item-contain">
-                                <ul>
-                                    <li><a href="./about.html"><i
-                                                class="fi flaticon-angle-arrow-pointing-to-right"></i><span>About
-                                                Us</span></a></li>
-                                    <li><a href="./features.html"><i
-                                                class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Features</span></a>
-                                    </li>
-                                    <li><a href="./FAQ.html"><i
-                                                class="fi flaticon-angle-arrow-pointing-to-right"></i><span>FAQ's</span></a>
-                                    </li>
-                                    <li><a href="./blog.html"><i
-                                                class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Blog</span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
-                        <div class="footer-item">
-                            <div class="item-header">
-                                <h5>Support</h5>
-                            </div>
-                            <div class="item-contain">
-                                <ul>
-                                    <li><a href="#"><i
-                                                class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Privacy
-                                                Policy</span></a></li>
-                                    <li><a href="#"><i class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Terms
-                                                of Use</span></a></li>
-                                    <li><a href="#"><i
-                                                class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Support
-                                                Center</span></a></li>
-                                    <li><a href="./contact.html"><i
-                                                class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Contact</span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12 col-12">
-                        <div class="footer-item">
-                            <div class="item-header">
-                                <h5>Contact Us</h5>
-                            </div>
-                            <div class="item-contain">
-                                <ul>
-                                    <li><span>455 West Orchard Street
-                                            Kings Mountain, NC 28086</span></li>
-                                    <li><span>Phone: (272) 211-7370</span></li>
-                                    <li><span>E-Mail:support@yourbrand.com</span></li>
-                                    <li>
+                                    <div class="text">
+                                        <p>Suspendisse condimentum, eros ac pulvinar iaculis, augue odio vehicula leo,
+                                            vitae dictum nibh quam rhoncus risus. Nam tristique tellus et convallis
+                                            faucibus. Cras in lacus at odio tristique tempor vel quis sem. Sed id lorem
+                                            sit amet turpis mattis tempor.
+                                        </p>
+                                    </div>
+                                    <div class="post-footer">
+                                        <span>Share -</span>
                                         <ul class="footer-social">
                                             <li><a href="#"><i class="fi flaticon-facebook-logo"></i></a></li>
                                             <li><a href="#"><i class="fi flaticon-twitter"></i></a></li>
@@ -430,22 +179,310 @@
                                             <li><a href="#"><i class="fi flaticon-google-plus"></i></a></li>
                                             <li><a href="#"><i class="fi flaticon-github-logo"></i></a></li>
                                         </ul>
-                                    </li>
-                                </ul>
+
+                                    </div>
+                                </div>
                             </div>
+
+
+                            <div class="col-lg-12">
+                                <div class="content-blog-comments">
+                                    <div class="blog-header">
+                                        <h5>Comments (3)</h5>
+                                    </div>
+                                    <ul class="comment-content-list">
+                                        <li>
+                                            <div class="icon">
+                                                <i class="fi flaticon-man-user"></i>
+                                            </div>
+                                            <div class="comment-content">
+
+                                                <div class="name-time">
+                                                    <div class="name">
+                                                        <h5>Hans Down</h5>
+                                                        <span>09 APR 2018</span>
+                                                    </div>
+                                                    <div class="reply">
+                                                        <a href="#"><i class="fi flaticon-reply"></i>Reply</a>
+                                                    </div>
+
+                                                </div>
+
+
+                                                <div class="comment-text">
+                                                    <p>
+                                                        Praesent ut fringilla ligula. Vivamus et lacus nec risus
+                                                        malesuada vestibulum. Phasellus lobortis
+                                                        viverra lobortis. Donec iaculis, erat eu bibendum faucibus.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <i class="fi flaticon-man-user"></i>
+                                            </div>
+                                            <div class="comment-content">
+
+                                                <div class="name-time">
+                                                    <div class="name">
+                                                        <h5>Penny Tool</h5>
+                                                        <span>09 APR 2018</span>
+                                                    </div>
+                                                    <div class="reply">
+                                                        <a href="#"><i class="fi flaticon-reply"></i>Reply</a>
+                                                    </div>
+
+                                                </div>
+
+
+
+                                                <div class="comment-text">
+                                                    <p>
+                                                        Praesent ut fringilla ligula. Vivamus et lacus nec risus
+                                                        malesuada vestibulum. Phasellus lobortis
+                                                        viverra lobortis. Donec iaculis, erat eu bibendum faucibus.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <ul>
+                                                <li>
+                                                    <div class="icon">
+                                                        <i class="fi flaticon-man-user"></i>
+                                                    </div>
+                                                    <div class="comment-content">
+
+                                                        <div class="name-time">
+                                                            <div class="name">
+                                                                <h5>Eric Widget</h5>
+                                                                <span>09 APR 2018</span>
+                                                            </div>
+                                                            <div class="reply">
+                                                                <a href="#"><i class="fi flaticon-reply"></i>Reply</a>
+                                                            </div>
+
+                                                        </div>
+
+
+
+                                                        <div class="comment-text">
+                                                            <p>
+                                                                Praesent ut fringilla ligula. Vivamus et lacus nec risus
+                                                                malesuada vestibulum. Phasellus
+                                                                lobortis viverra lobortis. Donec iaculis, erat eu
+                                                                bibendum faucibus.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="postcomment">
+                                    <div class="blog-header">
+                                        <h5>Post a Comment</h5>
+                                    </div>
+
+                                    <div class="postform">
+                                        <form action="#">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                    <div class="form-item">
+                                                        <label for="name">NAME</label>
+                                                        <input type="text" id="name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                    <div class="form-item">
+                                                        <label for="email">EMAIL</label>
+                                                        <input type="email" id="email">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="form-item">
+                                                        <label for="text">COMMENT:</label>
+                                                        <textarea id="text" cols="30" rows="10"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="form-item">
+                                                        <button type="submit" data-checked="true">SUBMIT
+                                                            COMMENT</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="col-lg-12">
+                                <div class="sidebar">
+                                    <div class="search">
+                                        <form>
+                                            <input type="text" placeholder="Search">
+                                            <button type="submit"><span class="fi flaticon-magnifier"></span></button>
+                                        </form>
+
+                                    </div>
+
+                                    <div class="blog-types">
+                                        <ul>
+                                            <li><a href="#">Cloud PMS</a><span>23</span></li>
+                                            <li><a href="#">Desktop PMS</a><span>12</span></li>
+                                            <li><a href="#">Hotel Software</a><span>153</span></li>
+                                            <li><a href="#">Social Media</a><span>9</span></li>
+                                            <li><a href="#">General</a><span>95</span></li>
+                                            <li><a href="#">Marketing</a><span>32</span></li>
+                                            <li><a href="#">Mobile Future</a><span>76</span></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="blog-buttons">
+                                        <a href="#">Team</a>
+                                        <a href="#">Hotel</a>
+                                        <a href="#">Android</a>
+                                        <a href="#">App</a>
+                                        <a href="#">Software</a>
+                                        <a href="#">Development</a>
+                                        <a href="#">API</a>
+                                        <a href="#">Store</a>
+                                        <a href="#">Reservation</a>
+                                        <a href="#">Analytics</a>
+                                        <a href="#">Support</a>
+                                        <a href="#">Coding</a>
+                                        <a href="#">Database</a>
+                                    </div>
+
+                                    <div class="contact-us">
+
+                                        <div class="content">
+                                            <h5>You can contact us for purchase, installation and customizations.</h5>
+                                            <a href="#" class="button" data-checked="true">CONTACT US</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
                     </div>
+
                 </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p class="copyright">© 2019 Jirono. All Rights Reserved.</p>
+            </section>
+
+
+        </main>
+        <footer>
+            <section id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                            <div class="footer-item">
+                                <div class="item-header">
+                                    <img src="./assets/img/logo-white.png" alt="logo">
+                                </div>
+                                <div class="item-contain">
+                                    <p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a
+                                        feugiat
+                                        eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus
+                                        semper.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="footer-item">
+                                <div class="item-header">
+                                    <h5>Helpful Links</h5>
+                                </div>
+                                <div class="item-contain">
+                                    <ul>
+                                        <li><a href="./about.html"><i
+                                                    class="fi flaticon-angle-arrow-pointing-to-right"></i><span>About
+                                                    Us</span></a></li>
+                                        <li><a href="./features.html"><i
+                                                    class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Features</span></a>
+                                        </li>
+                                        <li><a href="./FAQ.html"><i
+                                                    class="fi flaticon-angle-arrow-pointing-to-right"></i><span>FAQ's</span></a>
+                                        </li>
+                                        <li><a href="./blog.html"><i
+                                                    class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Blog</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="footer-item">
+                                <div class="item-header">
+                                    <h5>Support</h5>
+                                </div>
+                                <div class="item-contain">
+                                    <ul>
+                                        <li><a href="#"><i
+                                                    class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Privacy
+                                                    Policy</span></a></li>
+                                        <li><a href="#"><i
+                                                    class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Terms
+                                                    of Use</span></a></li>
+                                        <li><a href="#"><i
+                                                    class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Support
+                                                    Center</span></a></li>
+                                        <li><a href="./contact.html"><i
+                                                    class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Contact</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 col-12">
+                            <div class="footer-item">
+                                <div class="item-header">
+                                    <h5>Contact Us</h5>
+                                </div>
+                                <div class="item-contain">
+                                    <ul>
+                                        <li><span>455 West Orchard Street
+                                                Kings Mountain, NC 28086</span></li>
+                                        <li><span>Phone: (272) 211-7370</span></li>
+                                        <li><span>E-Mail:support@yourbrand.com</span></li>
+                                        <li>
+                                            <ul class="footer-social">
+                                                <li><a href="#"><i class="fi flaticon-facebook-logo"></i></a></li>
+                                                <li><a href="#"><i class="fi flaticon-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fi flaticon-linkedin"></i></a></li>
+                                                <li><a href="#"><i class="fi flaticon-google-plus"></i></a></li>
+                                                <li><a href="#"><i class="fi flaticon-github-logo"></i></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="copyright">© 2019 Jirono. All Rights Reserved.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </footer>
-    <script src="./assets/script/main.js"></script>
+            </section>
+        </footer>
+        <script src="./assets/script/main.js"></script>
 </body>
 
 </html>

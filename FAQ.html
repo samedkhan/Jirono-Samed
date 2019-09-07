@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="./assets/script/jquery.js"></script>
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            $('.preloader .spinner').delay(1800).fadeOut("slow", function () {
+                $(this).css('z-index', '0');
+                $('.preloader').addClass('complete').css("z-index", "0");
+            });
+
+        });
+    </script>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/grid.css">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -13,6 +22,13 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="spinner">
+            <div class="shadow"></div>
+            <div class="box"></div>
+        </div>
+
+    </div>
     <header>
         <section id="header">
             <div class="container">

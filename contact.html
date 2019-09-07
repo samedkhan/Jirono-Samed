@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="./assets/script/jquery.js"></script>
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            $('.preloader .spinner').delay(1800).fadeOut("slow", function () {
+                $(this).css('z-index', '0');
+                $('.preloader').addClass('complete').css("z-index", "0");
+            });
+
+        });
+    </script>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/grid.css">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -13,117 +22,125 @@
 </head>
 
 <body>
-    <header>
-        <section id="header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-12">
-                        <div class="navigation-bar">
-                            <div class="logo">
-                                <img src="./assets/img/logo-blue.png" alt="logo_blue">
-                            </div>
-                            <div class="menu">
-                                <ul>
-                                    <li class="main-menu"><a href="./index.html">Home</a></li>
-                                    <li class="main-menu" data-submenu="true"><a href="#">Discover</a>
-                                        <ul class="submenu">
-                                            <li><a href="#features">Features</a></li>
-                                            <li><a href="#team">Our Team</a></li>
-                                            <li><a href="#price-plans">Pricing Plans</a></li>
-                                            <li><a href="#blog">Latests Blogs</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="main-menu" data-submenu="true"><a href="#">Pages</a>
-                                        <ul class="submenu">
-                                            <li><a href="./about.html">About US</a></li>
-                                            <li><a href="./features.html">Features</a></li>
-                                            <li><a href="./FAQ.html">FAQ's</a></li>
-                                            <li><a href="./blog.html">Blog</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="main-menu"><a href="./contact.html">Contact</a></li>
-                                </ul>
+    <div class="preloader">
+        <div class="spinner">
+            <div class="shadow"></div>
+            <div class="box"></div>
+        </div>
+        </div>
+        <header>
+            <section id="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-12">
+                            <div class="navigation-bar">
+                                <div class="logo">
+                                    <img src="./assets/img/logo-blue.png" alt="logo_blue">
+                                </div>
+                                <div class="menu">
+                                    <ul>
+                                        <li class="main-menu"><a href="./index.html">Home</a></li>
+                                        <li class="main-menu" data-submenu="true"><a href="#">Discover</a>
+                                            <ul class="submenu">
+                                                <li><a href="#features">Features</a></li>
+                                                <li><a href="#team">Our Team</a></li>
+                                                <li><a href="#price-plans">Pricing Plans</a></li>
+                                                <li><a href="#blog">Latests Blogs</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="main-menu" data-submenu="true"><a href="#">Pages</a>
+                                            <ul class="submenu">
+                                                <li><a href="./about.html">About US</a></li>
+                                                <li><a href="./features.html">Features</a></li>
+                                                <li><a href="./FAQ.html">FAQ's</a></li>
+                                                <li><a href="./blog.html">Blog</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="main-menu"><a href="./contact.html">Contact</a></li>
+                                    </ul>
 
-                            </div>
-                            <div class="trigger">
-                                <div class="top"></div>
-                                <div class="middle"></div>
-                                <div class="bottom"></div>
-                            </div>
-                            <div class="registration">
-                                <ul>
-                                    <li><a href="#" class="button">SIGN IN</a></li>
-                                    <li><a href="#" class="button" data-checked="true">SIGN UP</a></li>
-                                </ul>
+                                </div>
+                                <div class="trigger">
+                                    <div class="top"></div>
+                                    <div class="middle"></div>
+                                    <div class="bottom"></div>
+                                </div>
+                                <div class="registration">
+                                    <ul>
+                                        <li><a href="#" class="button">SIGN IN</a></li>
+                                        <li><a href="#" class="button" data-checked="true">SIGN UP</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </header>
-    <main>
-        <section id="parallax-aboutUs">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="content-aboutUs">
-                            <div class="content-header">
-                                <h1>Contact</h1>
-                            </div>
-                            <div class="links">
-                                <ul>
-                                    <li><a href="./index.html">Contact</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
+            </section>
+        </header>
+        <main>
+            <section id="parallax-aboutUs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="content-aboutUs">
+                                <div class="content-header">
+                                    <h1>Contact</h1>
+                                </div>
+                                <div class="links">
+                                    <ul>
+                                        <li><a href="./index.html">Contact</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="contactpage">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="map">
+            <section id="contactpage">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="map">
                                 <div class="google-map">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29983.491762170866!2d144.94742150147712!3d-37.82222032012116!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2z0JzQtdC70YzQsdGD0YDQvSDQktC40LrRgtC-0YDQuNGPLCDQkNCy0YHRgtGA0LDQu9C40Y8!5e0!3m2!1sru!2s!4v1567786419655!5m2!1sru!2s" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24307.37626827665!2d49.958756250878935!3d40.39950052000424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4030630e150b9241%3A0xde46dce80b8fd0f4!2sKhalglar%20Dostlughu!5e0!3m2!1sen!2s!4v1567863985770!5m2!1sen!2s"
+                                        height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                                 </div>
                                 <div class="contact-information">
-                                   <div class="row">
+                                    <div class="row">
                                         <div class="col-lg-4">
                                             <div class="item">
                                                 <span>
-                                                        455 West Orchard Street
-                                                        <br>
-                                                        Kings Mountain, NC 28086
+                                                    455 West Orchard Street
+                                                    <br>
+                                                    Kings Mountain, NC 28086
                                                 </span>
                                             </div>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="item">
-                                                    <span>
-                                                            (272) 211-7370
-                                                            <br>
-                                                            (524) 386-5730
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="item">
-                                                    <span>
-                                                        info@yourbrand.com  
-                                                    </span>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="item">
+                                                <span>
+                                                    (272) 211-7370
                                                     <br>
-                                                    <span>                                                        
-                                                        support@yourbrand.com
-                                                    </span>
-                                                </div>
+                                                    (524) 386-5730
+                                                </span>
                                             </div>
-                                   </div>
-                                   <ul class="footer-social">
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="item">
+                                                <span>
+                                                    info@yourbrand.com
+                                                </span>
+                                                <br>
+                                                <span>
+                                                    support@yourbrand.com
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="footer-social">
                                         <li><a href="#"><i class="fi flaticon-facebook-logo"></i></a></li>
                                         <li><a href="#"><i class="fi flaticon-twitter"></i></a></li>
                                         <li><a href="#"><i class="fi flaticon-linkedin"></i></a></li>
@@ -131,32 +148,35 @@
                                         <li><a href="#"><i class="fi flaticon-github-logo"></i></a></li>
                                     </ul>
                                 </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="contact-bottom">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6 col-sm-12">
-                                    <h5>Get in touch</h5>
-                                    <div class="text">
-                                        <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam tempus magna vel turpis pharetra dictum.</p>
-                                        <p>Sed blandit tempus purus, sed sodales leo rutrum vel. Nam vulputate ipsum ac est congue, eget commodo magna lobortis.</p>
+                        <div class="col-lg-12">
+                            <div class="contact-bottom">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <h5>Get in touch</h5>
+                                        <div class="text">
+                                            <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                                                ridiculus mus. Etiam tempus magna vel turpis pharetra dictum.</p>
+                                            <p>Sed blandit tempus purus, sed sodales leo rutrum vel. Nam vulputate ipsum
+                                                ac est congue, eget commodo magna lobortis.</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-8 col-md-6 col-sm-12 col-12">
-                                    <div class="contact-form">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-12 col-sm-12">
-                                                <input type="text" placeholder="Name, Surname">
-                                            </div>
-                                            <div class="col-lg-6 col-md-12 col-sm-12">
-                                                <input type="email" placeholder="E-mail">
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <textarea placeholder="Your message"></textarea>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <button type="submit" data-checked="true">SEND</button>
+                                    <div class="col-lg-8 col-md-6 col-sm-12 col-12">
+                                        <div class="contact-form">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <input type="text" placeholder="Name, Surname">
+                                                </div>
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <input type="email" placeholder="E-mail">
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <textarea placeholder="Your message"></textarea>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <button type="submit" data-checked="true">SEND</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -165,108 +185,110 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-       
-    </main>
-    <footer>
-        <section id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-md-12 col-sm-12 col-12">
-                        <div class="footer-item">
-                            <div class="item-header">
-                                <img src="./assets/img/logo-white.png" alt="logo">
+            </section>
+
+        </main>
+        <footer>
+            <section id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                            <div class="footer-item">
+                                <div class="item-header">
+                                    <img src="./assets/img/logo-white.png" alt="logo">
+                                </div>
+                                <div class="item-contain">
+                                    <p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a
+                                        feugiat
+                                        eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus
+                                        semper.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="item-contain">
-                                <p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat
-                                    eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.
-                                </p>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="footer-item">
+                                <div class="item-header">
+                                    <h5>Helpful Links</h5>
+                                </div>
+                                <div class="item-contain">
+                                    <ul>
+                                        <li><a href="./about.html"><i
+                                                    class="fi flaticon-angle-arrow-pointing-to-right"></i><span>About
+                                                    Us</span></a></li>
+                                        <li><a href="./features.html"><i
+                                                    class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Features</span></a>
+                                        </li>
+                                        <li><a href="./FAQ.html"><i
+                                                    class="fi flaticon-angle-arrow-pointing-to-right"></i><span>FAQ's</span></a>
+                                        </li>
+                                        <li><a href="./blog.html"><i
+                                                    class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Blog</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
+
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="footer-item">
+                                <div class="item-header">
+                                    <h5>Support</h5>
+                                </div>
+                                <div class="item-contain">
+                                    <ul>
+                                        <li><a href="#"><i
+                                                    class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Privacy
+                                                    Policy</span></a></li>
+                                        <li><a href="#"><i
+                                                    class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Terms
+                                                    of Use</span></a></li>
+                                        <li><a href="#"><i
+                                                    class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Support
+                                                    Center</span></a></li>
+                                        <li><a href="./contact.html"><i
+                                                    class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Contact</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 col-12">
+                            <div class="footer-item">
+                                <div class="item-header">
+                                    <h5>Contact Us</h5>
+                                </div>
+                                <div class="item-contain">
+                                    <ul>
+                                        <li><span>455 West Orchard Street
+                                                Kings Mountain, NC 28086</span></li>
+                                        <li><span>Phone: (272) 211-7370</span></li>
+                                        <li><span>E-Mail:support@yourbrand.com</span></li>
+                                        <li>
+                                            <ul class="footer-social">
+                                                <li><a href="#"><i class="fi flaticon-facebook-logo"></i></a></li>
+                                                <li><a href="#"><i class="fi flaticon-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fi flaticon-linkedin"></i></a></li>
+                                                <li><a href="#"><i class="fi flaticon-google-plus"></i></a></li>
+                                                <li><a href="#"><i class="fi flaticon-github-logo"></i></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
-                        <div class="footer-item">
-                            <div class="item-header">
-                                <h5>Helpful Links</h5>
-                            </div>
-                            <div class="item-contain">
-                                <ul>
-                                    <li><a href="./about.html"><i
-                                                class="fi flaticon-angle-arrow-pointing-to-right"></i><span>About
-                                                Us</span></a></li>
-                                    <li><a href="./features.html"><i
-                                                class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Features</span></a>
-                                    </li>
-                                    <li><a href="./FAQ.html"><i
-                                                class="fi flaticon-angle-arrow-pointing-to-right"></i><span>FAQ's</span></a>
-                                    </li>
-                                    <li><a href="./blog.html"><i
-                                                class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Blog</span></a>
-                                    </li>
-                                </ul>
-                            </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="copyright">© 2019 Jirono. All Rights Reserved.</p>
                         </div>
-
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
-                        <div class="footer-item">
-                            <div class="item-header">
-                                <h5>Support</h5>
-                            </div>
-                            <div class="item-contain">
-                                <ul>
-                                    <li><a href="#"><i
-                                                class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Privacy
-                                                Policy</span></a></li>
-                                    <li><a href="#"><i class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Terms
-                                                of Use</span></a></li>
-                                    <li><a href="#"><i
-                                                class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Support
-                                                Center</span></a></li>
-                                    <li><a href="./contact.html"><i
-                                                class="fi flaticon-angle-arrow-pointing-to-right"></i><span>Contact</span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12 col-12">
-                        <div class="footer-item">
-                            <div class="item-header">
-                                <h5>Contact Us</h5>
-                            </div>
-                            <div class="item-contain">
-                                <ul>
-                                    <li><span>455 West Orchard Street
-                                            Kings Mountain, NC 28086</span></li>
-                                    <li><span>Phone: (272) 211-7370</span></li>
-                                    <li><span>E-Mail:support@yourbrand.com</span></li>
-                                    <li>
-                                        <ul class="footer-social">
-                                            <li><a href="#"><i class="fi flaticon-facebook-logo"></i></a></li>
-                                            <li><a href="#"><i class="fi flaticon-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fi flaticon-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fi flaticon-google-plus"></i></a></li>
-                                            <li><a href="#"><i class="fi flaticon-github-logo"></i></a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p class="copyright">© 2019 Jirono. All Rights Reserved.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </footer>
-    <script src="./assets/script/main.js"></script>
+            </section>
+        </footer>
+        <script src="./assets/script/main.js"></script>
 </body>
 
 </html>
